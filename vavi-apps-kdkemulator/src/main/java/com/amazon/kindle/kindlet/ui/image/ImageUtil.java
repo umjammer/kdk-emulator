@@ -26,6 +26,6 @@ public final class ImageUtil {
      * developers should not rely on it.
      */
     public static java.awt.image.BufferedImage createCompatibleImage(int width, int height, int transparency) {
-        return new BufferedImage(width, height, BufferedImage.TYPE_4BYTE_ABGR); // TODO transparency
+        return new BufferedImage(width, height, BufferedImage.TYPE_BYTE_GRAY); // TODO transparency
     }
 }
