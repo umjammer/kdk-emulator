@@ -9,8 +9,6 @@ package vavi.apps.kindlet;
 import java.awt.Container;
 import java.io.File;
 
-import javax.swing.JFrame;
-
 import com.amazon.kindle.kindlet.KindletContext;
 import com.amazon.kindle.kindlet.net.Connectivity;
 import com.amazon.kindle.kindlet.security.SecureStorage;
@@ -29,10 +27,10 @@ import com.amazon.kindle.kindlet.ui.OrientationController;
  */
 public class KindletContextImpl implements KindletContext {
 
-    private JFrame frame;
+    private Container container;
 
-    public KindletContextImpl(JFrame frame) {
-        this.frame = frame;
+    public KindletContextImpl(Container container) {
+        this.container = container;
     }
 
     /* @see com.amazon.kindle.kindlet.KindletContext#getConnectivity() */
@@ -60,7 +58,7 @@ public class KindletContextImpl implements KindletContext {
 
     /* */
     public Container getRootContainer() {
-        return frame.getContentPane();
+        return container;
     }
 
     /* @see com.amazon.kindle.kindlet.KindletContext#getSecureStorage() */
