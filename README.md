@@ -1,6 +1,6 @@
 # Kindle Emulator with KDK
 
-I can not wait to release [KDK](http://amazon.com/kdk/) ;-P
+I can not wait for the release of [KDK](http://amazon.com/kdk/) ;-P
 
 # News
 
