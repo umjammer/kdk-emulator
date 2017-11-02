@@ -14,7 +14,7 @@ I can not wait for the release of [KDK](http://amazon.com/kdk/) ;-P
 
 https://youtu.be/bKriwqCYEQA
 
-[source code](http://code.google.com/p/umjammer/source/browse/trunk/vavi-apps-nes-kdk)
+[source code](https://github.com/umjammer/vavi-apps-nes-kdk)
 
 [original](http://www.nescafeweb.com/)
 
@@ -66,6 +66,6 @@ e.printStackTrace(System.err);
  $ java vavi.apps.kindlet.KindletViewer vavi.games.tetris.TetrisApp
 ```
 
-You can download Tetris for KDK from [here](http://code.google.com/p/umjammer/source/browse/trunk/vavi-games-tetris-kdk)!
+You can download Tetris for KDK from [here](http://github.com/umjammer/vavi-games-tetris-kdk)!
 
 <a href="http://www.flickr.com/photos/52807817@N00/4458856225/" title="Kindle Tetris by umjammer, on Flickr"><img src="http://farm5.static.flickr.com/4025/4458856225_46f0b87fc4.jpg" width="444" height="500" alt="Kindle Tetris" /></a>
