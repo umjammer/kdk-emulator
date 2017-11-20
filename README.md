@@ -12,7 +12,7 @@ I can not wait for the release of [KDK](http://amazon.com/kdk/) ;-P
 
 ## NES emulator released! ##
 
-https://youtu.be/bKriwqCYEQA
+[![KDK NES ;-P](https://img.youtube.com/vi/bKriwqCYEQA/0.jpg)](https://www.youtube.com/watch?v=bKriwqCYEQA)
 
 [source code](https://github.com/umjammer/vavi-apps-nes-kdk)
 
