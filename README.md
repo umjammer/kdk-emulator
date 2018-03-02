@@ -4,12 +4,12 @@ I can not wait for the release of [KDK](http://amazon.com/kdk/) ;-P
 
 # News
 
-* [Official(jp)](http://www.klab.com/jp/press/detail/id=4825)
+* [Official (jp)](http://www.klab.com/jp/press/detail/id=4825)
 * [GIZMODE](http://gizmodo.com/5518727/the-kindle-plays-nes-games-like-a-penguin-soars)
 * [TechCrunch](https://techcrunch.com/2010/04/16/video-japanese-company-shows-super-mario-bros-on-kindle-emulator/)
 * [Ajiajin](http://asiajin.com/blog/2010/04/14/klab-releases-amazon-kindle-compatible-emulator-in-open-source/)
 * [Kotaku](http://kotaku.com/5518573/what-would-super-mario-bros-on-kindle-look-like)
-* [Rikunabi(jp)](https://next.rikunabi.com/tech/docs/ct_s03600.jsp?p=001736)
+* [Rikunabi (jp)](https://next.rikunabi.com/tech/docs/ct_s03600.jsp?p=001736)
 
 ## NES emulator released! ##
 
