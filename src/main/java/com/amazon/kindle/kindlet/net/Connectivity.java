@@ -23,7 +23,7 @@ package com.amazon.kindle.kindlet.net;
  * they may indicate a change in the state of the connection. The simplest way
  * to handle these exceptions (after informing the user) is to simply submit a
  * new request for connectivity.
- * 
+ *
  * <pre>
  * final ConnectivityHandler handler = new ConnectivityHandler() {
  *   public void connected() {
@@ -45,14 +45,14 @@ package com.amazon.kindle.kindlet.net;
  *   }
  * }
  * </pre>
- * 
+ *
  * Requests for connectivity execute in a separate set of threads than other
  * events. This permits applications to do work, as needed, directly in the
  * handler without blocking the user interface. However, it does mean that any
  * modifications to the user interface need to be dispatched via
  * {@link EventQueue.invokeLater(Runnable)} or {@link EventQueue.invokeAndWait(Runnable)}. Note:
  * All connections are terminated while the Kindlet is shutting down.
- * 
+ *
  * @see KindletContext.getConnectivity(), ConnectivityHandler,
  *      ConnectivityStateException, URLConnection
  */

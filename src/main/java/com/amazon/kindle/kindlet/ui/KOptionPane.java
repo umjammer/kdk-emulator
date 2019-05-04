@@ -17,28 +17,28 @@ package com.amazon.kindle.kindlet.ui;
 public class KOptionPane {
     /**
      * The value returned when a dialog is closed by the user selecting cancel.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int CANCEL_OPTION = 2;
 
     /**
      * Used to indicate a dialog with okay and cancel options.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int OK_CANCEL_OPTION = 2;
 
     /**
      * The value returned when a dialog is closed by the user selecting okay.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int OK_OPTION = 0;
 
     /**
      * Used to indicate a plain message with no icon.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int PLAIN_MESSAGE = -1;

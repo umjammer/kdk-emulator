@@ -34,41 +34,41 @@ package com.amazon.kindle.kindlet.ui;
  * If, however, it has no children it can receive the focus. Threading Note :
  * given the caveat that a Container's tree lock should be acquired prior to
  * performing a focus traversal, this class is generally threadsafe.
- * 
+ *
  * @see LogicalFocus2DTraversalPolicy
  */
 public class LayoutFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.AbstractFocus2DTraversalPolicy {
     /**
      * Constant for navigation matches that are diagonal.
-     * 
+     *
      * @see Constant Field Values
      */
     protected static final int MATCH_DIAGONAL = 3;
 
     /**
      * Constant for navigation matches that are between intersecting components.
-     * 
+     *
      * @see Constant Field Values
      */
     protected static final int MATCH_INTERSECTING = 5;
 
     /**
      * Constant for navigation comparisons that do not match.
-     * 
+     *
      * @see Constant Field Values
      */
     protected static final int MATCH_NOMATCH = 0;
 
     /**
      * Constant for navigation matches that are orthogonal.
-     * 
+     *
      * @see Constant Field Values
      */
     protected static final int MATCH_ORTHOGONAL = 4;
 
     /**
      * Constant for navigation matches that are tangental.
-     * 
+     *
      * @see Constant Field Values
      */
     protected static final int MATCH_TANGENTAL = 2;

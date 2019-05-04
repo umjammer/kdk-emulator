@@ -13,7 +13,7 @@ package com.amazon.kindle.kindlet.ui;
  * times. Additionally "dead spaces" can be added by using null entries in the
  * supplied component array (See setLogicalTraversalGrid(Component[][]) for
  * details on the component array).
- * 
+ *
  * @see LayoutFocus2DTraversalPolicy
  */
 public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.AbstractFocus2DTraversalPolicy {
@@ -29,7 +29,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
     /**
      * Create a 2D traversal policy that navigates through a logical grid of
      * components.
-     * 
+     *
      * @param traversalGrid - Logical grid of Components that this policy
      *            navigates through. See setLogicalTraversalGrid(Component[][])
      *            for full documentation on this argument.
@@ -132,7 +132,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      * "spanned" by repeating references to the same object in multiple indices.
      * For example; a grid containing a text field above to buttons could be
      * setup as such:
-     * 
+     *
      * <pre>
      * KTextArea myTextField = new KTextArea();
      * new Component[][] = new Component[][] {
@@ -143,7 +143,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      *     }
      * };
      * </pre>
-     * 
+     *
      * In the preceding example navigation would go up to the text field from
      * the "okay" button, right from the "okay" button to the "cancel" button,
      * and up from the "cancel" button to the text field. Furthermore, this
@@ -154,7 +154,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      * button to the text field would cause down to go back to the "okay"
      * button. null values can be used to create "space" in the grid which the
      * focus traversal policy will always skip over. For example;
-     * 
+     *
      * <pre>
      * new Component[][] = new Component[][] {
      *     {
@@ -166,7 +166,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      *     },
      * };
      * </pre>
-     * 
+     *
      * , would have "After" (i.e. "Right") navigation go from the "okay" button
      * to the "cancel" button skipping over the grid index at [1][1]. Similarly
      * navigation down from the text field at index [0][1] would move the focus

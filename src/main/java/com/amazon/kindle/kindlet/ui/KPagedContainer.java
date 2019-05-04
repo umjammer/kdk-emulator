@@ -18,7 +18,7 @@ package com.amazon.kindle.kindlet.ui;
  * use a BorderLayout and register PropertyChangeListener instances to respond
  * to page changes. Like most AWT components the methods on this class are not
  * thread safe.
- * 
+ *
  * @see Serialized Form
  */
 public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
@@ -34,7 +34,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
 
     /**
      * Disables page turn keys for this container.
-     * 
+     *
      * @see setPageKeyPolicy(int), Constant Field Values
      */
     public static final int PAGE_KEYS_DISABLED = 2;
@@ -42,7 +42,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
     /**
      * Indicates that page turn keys should be handled globally for this
      * container.
-     * 
+     *
      * @see setPageKeyPolicy(int), Constant Field Values
      */
     public static final int PAGE_KEYS_GLOBAL = 1;
@@ -50,7 +50,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
     /**
      * Indicates that page turn keys should be handled locally for this
      * container.
-     * 
+     *
      * @see setPageKeyPolicy(int), Constant Field Values
      */
     public static final int PAGE_KEYS_LOCAL = 0;
@@ -62,7 +62,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
 
     /**
      * Create a new container that pages over the supplied model.
-     * 
+     *
      * @param pageModel - the model that contains the items for the
      *            pagespageProvider - instance responsible for build a page
      */

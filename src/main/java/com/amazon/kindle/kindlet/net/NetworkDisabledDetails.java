@@ -8,7 +8,7 @@ package com.amazon.kindle.kindlet.net;
 /**
  * Provides details about why network access is disabled for the Kindle
  * Application.
- * 
+ *
  * @see ConnectivityHandler.disabled(NetworkDisabledDetails)
  */
 public interface NetworkDisabledDetails {

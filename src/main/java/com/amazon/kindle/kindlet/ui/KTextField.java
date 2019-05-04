@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet.ui;
  * password-like services a separate class KPasswordField extends KTextField to
  * provide the functionality. Serialization of this class is not supported in
  * this version.
- * 
+ *
  * @see Component.addKeyListener(java.awt.event.KeyListener)
  * @see KeyEvent,
  * @see KeyAdapter
@@ -21,14 +21,14 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * The number of columns in the text field. A column is an approximate
      * average character width that is platform-dependent. Guaranteed to be
      * non-negative.
-     * 
+     *
      * @see getColumns()
      */
     protected int m_columns;
 
     /**
      * Constructs a new empty text field. that is platform-dependent.
-     * 
+     *
      * @see TextField
      */
     public KTextField() {
@@ -39,7 +39,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * Constructs a new empty text field with the specified number of columns. A
      * column is an approximate average character width that is
      * platform-dependent.
-     * 
+     *
      * @param columns the number of columns. If columns is less than 0, columns
      *            is set to 0
      * @see TextField
@@ -50,7 +50,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Constructs a new empty text field prefilled with the specified text.
-     * 
+     *
      * @param text the text to be displayed. If text is null, the empty string
      *            "" will be displayed.
      * @see TextField
@@ -64,7 +64,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * displayed, and wide enough to hold the specified number of columns. A
      * column is an approximate average character width that is
      * platform-dependent.
-     * 
+     *
      * @param text the text to be displayed. If text is null, the empty string
      *            "" will be displayed.
      * @param columns the number of columns. If columns is less than 0, an
@@ -81,7 +81,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * column is an approximate average character width that is
      * platform-dependent. This is made package level so as the KPasswordField
      * can re-use it without re-initializing the peer.
-     * 
+     *
      * @param text the text to be displayed. If text is null, the empty string
      *            "" will be displayed.
      * @param columns the number of columns. If columns is less than 0 or more
@@ -102,7 +102,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * column is an approximate average character width that is
      * platform-dependent. This is protected to allow extension of this
      * Component without re-initializing the peer.
-     * 
+     *
      * @param text the text to be displayed. If text is null, the empty string
      *            "" will be displayed.
      * @param columns the number of columns. If columns is less than 0 or more
@@ -123,7 +123,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * Constructs a new empty text field prefilled with the specified text and
      * an alternate text which gets displayed when the actual text content of
      * this text field is empty.
-     * 
+     *
      * @param text the text to be displayed. If text is null, the empty string
      *            "" will be displayed.
      * @param hint the text to be displayed when the textual content component

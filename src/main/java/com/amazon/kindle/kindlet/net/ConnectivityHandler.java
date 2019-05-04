@@ -8,7 +8,7 @@ package com.amazon.kindle.kindlet.net;
 /**
  * Interface to receive a notification when the network has become available or
  * is determined to be unavailable.
- * 
+ *
  * @see Connectivity
  */
 public interface ConnectivityHandler {

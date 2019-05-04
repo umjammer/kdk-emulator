@@ -6,7 +6,7 @@ package com.amazon.kindle.kindlet.util;
  * Provides a Kindle specific replacement for java.util.TimerTask. This class is
  * generally API compatible with the standard. A task that may be scheduled for
  * execution by Timer.
- * 
+ *
  * @see TimerTask
  */
 public abstract class TimerTask implements java.lang.Runnable {

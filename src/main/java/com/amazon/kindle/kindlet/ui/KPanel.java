@@ -9,7 +9,7 @@ package com.amazon.kindle.kindlet.ui;
  * A simple opaque area where an application can attach other components. The
  * default layout is a FlowLayout. Serialization of this class is not supported
  * in this version.
- * 
+ *
  * @see Serialized Form
  */
 public class KPanel extends com.amazon.kindle.kindlet.ui.KComponent {
@@ -22,7 +22,7 @@ public class KPanel extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
      * Creates a new KPanel with the specified layout manager.
-     * 
+     *
      * @param layout - the default LayoutManager for this panel
      */
     public KPanel(java.awt.LayoutManager layout) {

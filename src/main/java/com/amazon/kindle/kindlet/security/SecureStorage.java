@@ -35,7 +35,7 @@ package com.amazon.kindle.kindlet.security;
  * with the server. Last search termTreat the last search term as unknown. For
  * data that needs more durability developers will need to arrange for storing
  * this data on a remote server.
- * 
+ *
  * @since 1.0
  * @see KindletContext.getSecureStorage()
  * @see KindletContext.getHomeDirectory()

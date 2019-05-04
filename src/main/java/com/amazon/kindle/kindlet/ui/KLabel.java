@@ -16,7 +16,7 @@ package com.amazon.kindle.kindlet.ui;
  * size allocated to the label, it will be truncated and an ellipsis added. For
  * instance, the text "Too big for a label" might be shown as "Too big for ...".
  * Serialization of this class is not supported in this version.
- * 
+ *
  * @see KTextField, KLabelMultiline, java.awt.Label, javax.swing.JLabel,
  *      Serialized Form
  */
@@ -30,7 +30,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Construct a label with the supplied text and default alignment.
-     * 
+     *
      * @param text - text to display
      */
     public KLabel(java.lang.String text) {
@@ -40,7 +40,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Construct a label with the supplied text and a specific horizontal
      * alignment.
-     * 
+     *
      * @param text - text to displayhorizontalAlignment - horizontal alignment
      *            of the label within its bounds Throws:
      *            IllegalArgumentException - if the horizontal alignment is not

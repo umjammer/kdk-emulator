@@ -14,7 +14,7 @@ package com.amazon.kindle.kindlet.ui;
  * is provided separately to make it easier to safely change the UI for the
  * KTextField without affecting password entries. Serialization of this class is
  * not supported in this version.
- * 
+ *
  * @see Serialized Form
  */
 public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
@@ -29,7 +29,7 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
     /**
      * Constructs a new empty KPasswordField with the specified number of
      * columns. The initial string text is set to null.
-     * 
+     *
      * @param columns - the number of columns >= 0 else throws an
      *            IllegalArgumentException.
      */
@@ -40,7 +40,7 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
     /**
      * Constructs a new KPasswordField initialized with the specified text and
      * the number of columns to 0.
-     * 
+     *
      * @param text - the text to be displayed, null if none
      */
     public KPasswordField(java.lang.String text) {
@@ -52,7 +52,7 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
      * displayed, and wide enough to hold the specified number of columns. A
      * column is an approximate average character width that is
      * platform-dependent.
-     * 
+     *
      * @param text - the text to be displayed. If text is null, the empty string
      *            "" will be displayed.columns - the number of columns. If
      *            columns is less than 0 or more than

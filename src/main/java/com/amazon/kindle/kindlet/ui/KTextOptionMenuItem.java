@@ -13,7 +13,7 @@ public class KTextOptionMenuItem {
     /**
      * Construct a new option menu item with the given text. The menu item is
      * displayed using text.toString().
-     * 
+     *
      * @param value option item value
      * @throws IllegalArgumentException if text is null
      */

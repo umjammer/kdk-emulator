@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet;
  * cycle methods required by the Kindlet interface. This class can be extended
  * by developers who do not need to take special actions in various life cycle
  * methods.
- * 
+ *
  * @since 1.0
  * @see Kindlet
  */

@@ -12,14 +12,14 @@ package com.amazon.kindle.kindlet.ui;
 public interface Focus2DTraversable {
     /**
      * Constant for the "above" focus traversal key set.
-     * 
+     *
      * @see Constant Field Values
      */
     static final int ABOVE_TRAVERSAL_KEYS = 0;
 
     /**
      * Constant for the "below" focus traversal key set.
-     * 
+     *
      * @see Constant Field Values
      */
     static final int BELOW_TRAVERSAL_KEYS = 1;

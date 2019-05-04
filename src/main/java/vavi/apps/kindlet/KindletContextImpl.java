@@ -20,9 +20,9 @@ import com.amazon.kindle.kindlet.ui.OrientationController;
 
 
 /**
- * KindletContextImpl. 
+ * KindletContextImpl.
  *
- * @author <a href="mailto:vavivavi@yahoo.co.jp">Naohide Sano</a> (nsano)
+ * @author <a href="mailto:umjammer@gmail.com">Naohide Sano</a> (nsano)
  * @version 0.00 2010/03/05 nsano initial version <br>
  */
 public class KindletContextImpl implements KindletContext {
@@ -80,13 +80,13 @@ public class KindletContextImpl implements KindletContext {
     /* @see com.amazon.kindle.kindlet.KindletContext#setSubTitle(java.lang.String) */
     public void setSubTitle(String subtitle) {
         // TODO Auto-generated method stub
-        
+
     }
 
     /* @see com.amazon.kindle.kindlet.KindletContext#setTextOptionPane(com.amazon.kindle.kindlet.ui.KTextOptionPane) */
     public void setTextOptionPane(KTextOptionPane option) {
         // TODO Auto-generated method stub
-        
+
     }
 }
 

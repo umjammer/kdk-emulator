@@ -18,7 +18,7 @@ package com.amazon.kindle.kindlet.util;
  * subsequent attempts to schedule tasks will result in an IllegalStateException
  * being thrown. Timer threads are not intended to prolong the life an
  * application.
- * 
+ *
  * @see Timer, TimerTask
  */
 public class Timer {
@@ -28,7 +28,7 @@ public class Timer {
     /**
      * Construct a new Timer. Kindle developers must use this class instead of
      * java.util.Timer.
-     * 
+     *
      * @see Timer.Timer()
      */
     public Timer() {
@@ -37,7 +37,7 @@ public class Timer {
 
     /**
      * Construct a new Timer.
-     * 
+     *
      * @param isDaemon ignored since all Kindle Timer's are treated as deamons
      * @see Timer.Timer(boolean)
      */

@@ -9,7 +9,7 @@ package com.amazon.kindle.kindlet.ui;
  * A KPagedContainer which provides internal storage for pages, displays items
  * one per page (by default), and allows easy addition/removal of items in the
  * page.
- * 
+ *
  * @see Serialized Form
  */
 public class KPages extends com.amazon.kindle.kindlet.ui.KPagedContainer {
@@ -22,7 +22,7 @@ public class KPages extends com.amazon.kindle.kindlet.ui.KPagedContainer {
 
     /**
      * Creates a new set of pages.
-     * 
+     *
      * @param pageProvider - the provider of pages
      */
     public KPages(com.amazon.kindle.kindlet.ui.pages.PageProvider pageProvider) {

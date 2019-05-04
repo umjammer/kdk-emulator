@@ -13,7 +13,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Construct an empty menu with the given title
-     * 
+     *
      * @param title menu title
      */
     public KTextOptionListMenu(java.lang.String title) {
@@ -22,7 +22,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Construct an empty menu with the given title
-     * 
+     *
      * @param title menu title
      * @param elements array of items to add to the menu. If an item is a
      *            KTextOptionMenuItem it is added, otherwise the item is added
@@ -99,7 +99,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Sets the KTextOptionMenuItem as the selected selected value
-     * 
+     *
      * @return the selected menu item index.
      */
     public void setSelectedIndex(int index) {

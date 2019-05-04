@@ -33,7 +33,7 @@ package com.amazon.kindle.kindlet.ui;
  * implementation is intended to be compatible with javax.swing.BoxLayout.
  * (Except that it may not replicate some bugs found in the various versions of
  * Swing.)
- * 
+ *
  * @see KBox, javax.swing.BoxLayout
  */
 public class KBoxLayout implements java.awt.LayoutManager2 {
@@ -41,7 +41,7 @@ public class KBoxLayout implements java.awt.LayoutManager2 {
      * Constant to indicate layout along the axis of a line. The PBP does not
      * support Component orientation, so in this release of the KDK this is the
      * same as the x axis.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int LINE_AXIS = 2;
@@ -50,21 +50,21 @@ public class KBoxLayout implements java.awt.LayoutManager2 {
      * Constant to indicate layout along the axis of a line. The PBP does not
      * support Component orientation, so in this release of the KDK this is the
      * same as the y axis.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int PAGE_AXIS = 3;
 
     /**
      * Constant to indicate horizontal layout (along the x axis).
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int X_AXIS = 0;
 
     /**
      * Constant to indicate vertical layout (along the y axis).
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int Y_AXIS = 1;
@@ -73,7 +73,7 @@ public class KBoxLayout implements java.awt.LayoutManager2 {
      * Creates a new box-style layout for the supplied container along the
      * specified axis. This layout is specific to the container and can not be
      * shared.
-     * 
+     *
      * @param container - the container to layoutaxis - the axis to lay out
      *            components along. This must be one of X_AXIS, Y_AXIS,
      *            LINE_AXIS or PAGE_AXIS. Throws: AWTError - if an invalid value

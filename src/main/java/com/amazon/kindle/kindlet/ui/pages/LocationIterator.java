@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet.ui.pages;
  * not mutable and only operates in one direction at a time. Unless specifically
  * guaranteed by the sub-class, implementations of this interface may not be
  * thread safe. See PageModel for a more detailed description of a location.
- * 
+ *
  * @see ListIterator
  */
 public interface LocationIterator extends java.util.Iterator {

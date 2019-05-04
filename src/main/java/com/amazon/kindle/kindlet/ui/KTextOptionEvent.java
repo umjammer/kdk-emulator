@@ -14,7 +14,7 @@ public class KTextOptionEvent extends java.awt.event.ItemEvent {
 
     /**
      * Creates a new event indicating that a state change on a given item.
-     * 
+     *
      * @param source the selectable item that caused the evet
      * @param id integer identifying the type of the event
      * @param item the item effected

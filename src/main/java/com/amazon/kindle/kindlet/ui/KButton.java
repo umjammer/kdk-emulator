@@ -13,7 +13,7 @@ package com.amazon.kindle.kindlet.ui;
  * layouts which ignore the button's maximum height (e.g. BorderLayout or
  * GridLayout) may result in improper rendering of the button. Example Rendering
  * Serialization of this class is not supported in this version.
- * 
+ *
  * @see java.awt.Button, javax.swing.JButton, Serialized Form
  */
 public class KButton extends com.amazon.kindle.kindlet.ui.KComponent {
@@ -26,7 +26,7 @@ public class KButton extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
      * Constructs a new button with the given label.
-     * 
+     *
      * @param label - label to appear on the button, or null for no label
      */
     public KButton(java.lang.String label) {

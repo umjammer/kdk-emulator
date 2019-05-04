@@ -15,7 +15,7 @@ public class KMenuItem {
     /**
      * Creates a new menu item with no label (""). This is not the same as a
      * separator.
-     * 
+     *
      * @see KMenu.addSeparator()
      */
     public KMenuItem() {
@@ -24,7 +24,7 @@ public class KMenuItem {
 
     /**
      * Creates a new menu with the supplied label.
-     * 
+     *
      * @param label - the label for this menu item
      */
     public KMenuItem(java.lang.String label) {

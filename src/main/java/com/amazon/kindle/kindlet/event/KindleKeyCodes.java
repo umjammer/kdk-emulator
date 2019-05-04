@@ -38,42 +38,42 @@ public final class KindleKeyCodes {
      * not consume the back events if there is no logical step to move back
      * within the application. This will allow the Kindle system to take the
      * user back to their previous activity.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_BACK = 61441;
 
     /**
      * Key code for pressing down on the five-way controller.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_FIVE_WAY_DOWN = 34;
 
     /**
      * Key code for pressing left on the five-way controller.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_FIVE_WAY_LEFT = 37;
 
     /**
      * Key code for pressing right on the five-way controller.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_FIVE_WAY_RIGHT = 39;
 
     /**
      * Key code pressing in ("select") on the five-way controller.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_FIVE_WAY_SELECT = 61451;
 
     /**
      * Key code for pressing up on the five-way controller.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_FIVE_WAY_UP = 33;
@@ -81,35 +81,35 @@ public final class KindleKeyCodes {
     /**
      * Deprecated. Key code for the key, frequently used to control font size
      * and other display properties.
-     * 
+     *
      * @see VK_TEXT, Constant Field Values
      */
     public static final int VK_FONT_SIZE = 61447;
 
     /**
      * Key code for the left-side next page button.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_LEFT_HAND_SIDE_TURN_PAGE = 61449;
 
     /**
      * Key code for the menu button.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_MENU = 65482;
 
     /**
      * Key code for the right-side next page button.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_RIGHT_HAND_SIDE_TURN_PAGE = 61448;
 
     /**
      * Key code for the symbol key.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_SYMBOL = 61443;
@@ -117,14 +117,14 @@ public final class KindleKeyCodes {
     /**
      * Key code for the key, frequently used to control font size and other
      * display properties.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_TEXT = 61447;
 
     /**
      * Key code for the previous page button.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int VK_TURN_PAGE_BACK = 61450;

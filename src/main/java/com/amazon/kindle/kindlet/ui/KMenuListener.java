@@ -9,7 +9,7 @@ package com.amazon.kindle.kindlet.ui;
  * Interface for receiving events about the state of the menu. Menus notify this
  * listener before opening and after closing. Note: This event is not in an
  * event package for historical reasons.
- * 
+ *
  * @see KMenu.addMenuListener(KMenuListener), javax.swing.MenuListener
  */
 public interface KMenuListener extends java.util.EventListener {

@@ -57,7 +57,7 @@ package com.amazon.kindle.kindlet;
  * (from {@link KindletContext.getRootContainer()}) and implement
  * {@link ComponentListener.componentShown(java.awt.event.ComponentEvent)}. This
  * technique does not work in general for components, only the root container.
- * 
+ *
  * @since 1.0
  * @see AbstractKindlet, KindletContext
  */

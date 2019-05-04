@@ -21,7 +21,7 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
     /**
      * Construct a font size change listener. The default Kindle font size array
      * will be used.
-     * 
+     *
      * @param selectedFontSize selected font size. This font size is used to set
      *            the initial selected value on the font size selection dialog
      *            when it first appears.
@@ -33,7 +33,7 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Construct a font size change listener.
-     * 
+     *
      * @param selectedFontSize selected font size. This font size is used to set
      *            the initial selected value on the font size selection dialog
      *            when it first appears.

@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet;
  * provides access to the Kindlet's user interface, filesystem space, network
  * connectivity and more. It is safe for a Kindlet to maintain a reference to
  * the KindletContext for it's entire lifetime.
- * 
+ *
  * @since 1.0
  * @see Kindlet
  */

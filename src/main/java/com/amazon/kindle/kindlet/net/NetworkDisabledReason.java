@@ -15,7 +15,7 @@ package com.amazon.kindle.kindlet.net;
  * as a type-safe set of constants. New reasons may be introduced in the future,
  * so applications should always handle the case where none of these reasons
  * match.
- * 
+ *
  * @see NetworkDisabledDetails
  * @see ConnectivityHandler.disabled(NetworkDisabledDetails)
  */

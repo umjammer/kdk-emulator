@@ -20,7 +20,7 @@ package com.amazon.kindle.kindlet.ui.pages;
  * locations. If later the first or last locations become known, the model
  * should begin to return the known information. As a result, users of these
  * APIs should not cache this information.
- * 
+ *
  * @see PageModels
  */
 public interface PageModel {

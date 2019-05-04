@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet.ui.border;
  * components in the Kindle Development Kit support borders. For components that
  * do not support borders, it is possible to create an empty border by
  * overriding Container.getInsets().
- * 
+ *
  * @see Container.getInsets()
  * @see KAbstractBorder
  */

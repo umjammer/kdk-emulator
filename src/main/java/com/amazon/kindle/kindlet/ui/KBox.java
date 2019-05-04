@@ -12,14 +12,14 @@ package com.amazon.kindle.kindlet.ui;
  * expand to fill as much as possible. Struts desire a certain amount of fixed
  * space along a single axis. A rigid area is like a strut in both directions.
  * This class is intended to be API compatible with javax.swing.Box.
- * 
+ *
  * @see KBoxLayout, javax.swing.Box, Serialized Form
  */
 public class KBox extends com.amazon.kindle.kindlet.ui.KComponent {
     /**
      * Create a new container for components that are aligned along the
      * indicated axis.
-     * 
+     *
      * @param axis - one of the constants from KBoxLayout
      */
     public KBox(int axis) {
@@ -104,13 +104,13 @@ public class KBox extends com.amazon.kindle.kindlet.ui.KComponent {
      * requests. The JavaDoc for javax.swing.Box was unclear on if this is
      * invisible space or not. This component draws its background if isOpaque()
      * is true. The opacity can be changed via setOpaque(boolean).
-     * 
+     *
      * @see Serialized Form
      */
     public static class Filler extends com.amazon.kindle.kindlet.ui.KComponent {
         /**
          * Creates a filler which advertises the provided sizes.
-         * 
+         *
          * @param minimum - the minimum size for this fillerpreferred - the
          *            preferred size for this fillermaximum - the maximum size
          *            for this filler

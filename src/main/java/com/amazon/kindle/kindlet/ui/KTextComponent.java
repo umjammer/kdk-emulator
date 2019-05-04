@@ -7,20 +7,20 @@ package com.amazon.kindle.kindlet.ui;
 
 /**
  * Common base class for Components that render text in some manner.
- * 
+ *
  * @see Serialized Form
  */
 public abstract class KTextComponent extends com.amazon.kindle.kindlet.ui.KComponent {
     /**
      * Align with the bottom of an area.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int BOTTOM = 3;
 
     /**
      * Align in the center of an area.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int CENTER = 0;
@@ -28,7 +28,7 @@ public abstract class KTextComponent extends com.amazon.kindle.kindlet.ui.KCompo
     /**
      * Align with the leading edge of a text area. For left-to-right text this
      * is the "left" and vice-versa for right-to-left text.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int LEADING = 2;
@@ -36,14 +36,14 @@ public abstract class KTextComponent extends com.amazon.kindle.kindlet.ui.KCompo
     /**
      * Constant used to signal that no maximum number of lines limit a text
      * layout algorithm.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int SHOW_ALL_LINES = -1;
 
     /**
      * Align with the top of an area.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int TOP = 4;
@@ -51,7 +51,7 @@ public abstract class KTextComponent extends com.amazon.kindle.kindlet.ui.KCompo
     /**
      * Align with the trailing edge of a text area. For left-to-right text this
      * is the "right" and vice-versa for right-to-left text.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int TRAILING = 1;

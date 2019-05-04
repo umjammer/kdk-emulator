@@ -21,7 +21,7 @@ package com.amazon.kindle.kindlet.ui;
  * through the Text menu. If an application locks the orientation using this
  * controller, the orientation will be restored to the previous setting when the
  * application exits.
- * 
+ *
  * @see KindletContext.getOrientationController()
  * @see KindleOrientation,
  * @see KTextOptionOrientationMenu

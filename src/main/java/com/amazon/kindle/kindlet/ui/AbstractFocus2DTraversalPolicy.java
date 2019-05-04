@@ -12,49 +12,49 @@ package com.amazon.kindle.kindlet.ui;
 public abstract class AbstractFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.Focus2DTraversalPolicy {
     /**
      * Constant for the down direction.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_DOWN = 1;
 
     /**
      * Constant for traversing from the first component.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_FIRST = 4;
 
     /**
      * Constant for traversing from the last component.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_LAST = 5;
 
     /**
      * Constant for the left direction.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_LEFT = 2;
 
     /**
      * Maximum reserved integer for these traversal constants.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_MAX = 5;
 
     /**
      * Constant for the right direction.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_RIGHT = 3;
 
     /**
      * Constant for the up direction.
-     * 
+     *
      * @see {@value}
      */
     protected static final int TRAVERSE_UP = 0;

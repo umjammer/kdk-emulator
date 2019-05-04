@@ -9,13 +9,13 @@ package com.amazon.kindle.kindlet.ui;
  * A KTextArea object is a multi-line region that displays text. It can be set
  * to allow editing or to be read-only. Serialization of this class is not
  * supported in this version.
- * 
+ *
  * @see KTextField, Serialized Form
  */
 public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new empty text Area. that is platform-dependent.
-     * 
+     *
      * @see TextArea
      */
     public KTextArea() {
@@ -25,7 +25,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new empty TextArea with the specified number of rows and
      * columns with the initial string is null.
-     * 
+     *
      * @param rows - the number of rows >= 0columns - the number of columns >= 0
      *            Throws: IllegalArgumentException - if the rows or columns
      *            arguments are negative.
@@ -37,7 +37,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new text area initialized with the specified text to be
      * displayed.
-     * 
+     *
      * @param text - the text to be displayed. If text is null, the empty string
      *            "" will be displayed.See Also:TextArea
      */
@@ -48,7 +48,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new text area initialized with the specified text to be
      * displayed.
-     * 
+     *
      * @param text - the text to be displayed. If text is null, the empty string
      *            "" will be displayed.rows - the number of rows >= 0columns -
      *            the number of columns >= 0 Throws: IllegalArgumentException -
@@ -62,7 +62,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new text area initialized with the specified text to be
      * displayed.
-     * 
+     *
      * @param text - the text to be displayed. If text is null, the empty string
      *            "" will be displayed.hint - the text to be displayed when the
      *            component is empty. If text is null, the empty string "" will
@@ -75,7 +75,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Constructs a new text area initialized with the specified text to be
      * displayed.
-     * 
+     *
      * @param text - the text to be displayed. If text is null, the empty string
      *            "" will be displayed.hint - the text to be displayed when the
      *            component is empty. If text is null, the empty string "" will

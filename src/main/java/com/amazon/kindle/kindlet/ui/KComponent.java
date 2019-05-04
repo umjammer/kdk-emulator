@@ -15,7 +15,7 @@ package com.amazon.kindle.kindlet.ui;
  * to ensure the class hierarchy makes sense, even though most subclasses will
  * not be containers. Serialization of this class is not supported in this
  * version.
- * 
+ *
  * @see Focus2DTraversable
  * @see Focus2DTraversalPolicy
  */

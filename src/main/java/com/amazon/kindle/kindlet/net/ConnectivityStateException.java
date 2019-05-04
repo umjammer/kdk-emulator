@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet.net;
  * now allow creation of network connections. Callbacks from
  * Connectivity.submitConnectivityRequest(ConnectivityHandler) provide more
  * details.
- * 
+ *
  * @see Connectivity.submitConnectivityRequest(ConnectivityHandler)
  * @see NetworkDisabledDetails
  */
@@ -26,7 +26,7 @@ public class ConnectivityStateException extends java.io.IOException {
     /**
      * Constructs a new ConnectivityStateException with the given detail
      * message.
-     * 
+     *
      * @param msg - the exception message
      */
     public ConnectivityStateException(java.lang.String msg) {

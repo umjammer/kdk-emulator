@@ -10,7 +10,7 @@ package com.amazon.kindle.kindlet.ui;
  * non-editable text this provides faster layout times and a smaller memory
  * footprint when compared to KTextArea. Serialization of this class is not
  * supported in this version.
- * 
+ *
  * @see Serialized Form
  */
 public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
@@ -25,7 +25,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Constructs a multi-line label with the supplied text, a LEADING
      * horizontal alignment, and a TOP vertical alignment.
-     * 
+     *
      * @param text - text to display
      */
     public KLabelMultiline(java.lang.String text) {
@@ -35,7 +35,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Constructs a multi-line label with text, the specified horizontal
      * alignment, and a TOP vertical alignment.
-     * 
+     *
      * @param text - text to displayhorizontalAlignment - horizontal alignment
      *            of the label within its bounds.
      */
@@ -46,7 +46,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Constructs a multi-line label with text and the specified horizontal and
      * vertical alignments.
-     * 
+     *
      * @param text - text to displayhorizontalAlignment - horizontal alignment
      *            of the label within its bounds.verticalAlignment - vertical
      *            alignment of the label within its bounds.

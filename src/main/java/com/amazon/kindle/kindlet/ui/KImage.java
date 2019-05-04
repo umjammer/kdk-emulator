@@ -17,7 +17,7 @@ package com.amazon.kindle.kindlet.ui;
  * Developers can override onImageReady() to change this behavior. This class is
  * not thread safe - methods should be called from the AWT event thread.
  * Serialization of this class is not supported in this version.
- * 
+ *
  * @see Serialized Form
  */
 public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements java.awt.image.ImageObserver {
@@ -50,7 +50,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
      * When provided as the width or height of the image image, the image will
      * be displayed with no scaling along that dimension and the actual value
      * will be taken from the image itself.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int FROM_IMAGE = 0;
@@ -59,7 +59,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
      * When provided as the desried width or height of the image, the image will
      * be scaled along that dimension to fit the size of the component, but the
      * aspect ratio will be preserved.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int SCALE_TO_FIT = -2;
@@ -68,7 +68,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
      * When provided as the width or height of the image, the image will be
      * scaled along that dimension to fit the size of the component preserving
      * the aspect ratio. However, the image will never scale up.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int SHRINK_TO_FIT = -1;
@@ -76,7 +76,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * When provided as the desired width or height of the image, the image will
      * be stretched along that dimension to fit the size of the component.
-     * 
+     *
      * @see Constant Field Values
      */
     public static final int STRETCH_TO_FIT = -3;
@@ -84,7 +84,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * Creates a component that displays the image at its natural size, centered
      * in the component.
-     * 
+     *
      * @param image - the image to display, may be null
      */
     public KImage(java.awt.Image image) {
@@ -94,7 +94,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * Creates a component that displays the desired image, at the specified
      * size, in the center of the component.
-     * 
+     *
      * @param image - the image to display, may be nullwidth - the desired
      *            width, or one of the scaling constantsheight - the desired
      *            height, or one of the scaling constants Throws:
@@ -107,7 +107,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
 
     /**
      * Creates a component which displays the supplied image.
-     * 
+     *
      * @param image - the image to display, may be nullwidth - the desired width
      *            in pixels, or one of the scaling constantsheight - the desired
      *            height in pixels, or one of the scaling
@@ -123,7 +123,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * Creates a component that displays the image at natural size, aligned in
      * the indicated manner in the component.
-     * 
+     *
      * @param image - the image to display, may be nullhorizontalAlignment - the
      *            alignment along the horizontal axisverticalAlignment - the
      *            alignment along the vertical axis Throws:
