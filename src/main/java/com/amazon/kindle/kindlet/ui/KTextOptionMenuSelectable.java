@@ -1,7 +1,6 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui;
 
 /**
@@ -10,21 +9,26 @@ package com.amazon.kindle.kindlet.ui;
 public abstract class KTextOptionMenuSelectable implements java.awt.ItemSelectable, com.amazon.kindle.kindlet.ui.KTextOptionMenu {
 
     public void addItemListener(java.awt.event.ItemListener l) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public java.lang.Object[] getSelectedObjects() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
      * Notifies all registered listeners of a change event.
+     * @param e change event
      */
     public void notifyItemStateChanged(com.amazon.kindle.kindlet.ui.KTextOptionEvent e) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void removeItemListener(java.awt.event.ItemListener l) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 }

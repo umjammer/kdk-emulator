@@ -1,21 +1,21 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui;
 
-
 /**
- * Standard font option menu Serialization of this class is not supported in
- * this version.
+ * Standard font option menu
+ *
+ * Serialization of this class is not supported in this version.
  */
 public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptionMenuSelectable {
+
     /**
      * Construct a font size change listener. The default Kindle font size and
      * font size array will be used.
      */
     public KTextOptionFontMenu() {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -28,7 +28,7 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * @throws IllegalArgumentException if the selectedFontSize is <= 0
      */
     public KTextOptionFontMenu(int selectedFontSize) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -44,7 +44,7 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      *             if the selectedFontSize is <= 0
      */
     public KTextOptionFontMenu(int selectedFontSize, int[] fontSizes) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -52,17 +52,26 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * size array is to be used when displaying the font size menu.
      */
     public int[] getFontSizes() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
+    /**
+     * @return selected font size
+     */
     public int getSelectedFontSize() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     /**
      * Sets the selected font size
+     * @param selectedFontSize selected font size.  This font size is used to set the initial selected value
+     *  on the font size selection dialog when it first appears.
+     * @exception java.lang.IllegalArgumentException if the selectedFontSize is &lt;= 0
      */
     public void setSelected(int selectedFontSize) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 }

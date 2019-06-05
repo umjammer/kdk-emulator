@@ -1,15 +1,15 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui;
 
-
 /**
- * Event interface for text option events. Serialization of this class is not
- * supported in this version.
+ * Event interface for text option events.
+ *
+ * Serialization of this class is not supported in this version.
  */
 public class KTextOptionEvent extends java.awt.event.ItemEvent {
+
     private boolean isVisit;
 
     /**
@@ -28,13 +28,12 @@ public class KTextOptionEvent extends java.awt.event.ItemEvent {
     }
 
     /**
-     * @return true if the event is a visit event, false for a select event. A
-     *         visit event occurs when the user navigates to an item. A select
-     *         event occurs when the user selects an item using the 5-way
-     *         button.
+     * Return true if the event is a visit event, false for a select event.  A visit event
+     * occurs when the user navigates to an item.  A select event occurs when the user selects an item
+     * using the 5-way button.
+     * @return visit state
      */
     public boolean isVisit() {
         return isVisit;
     }
-
 }

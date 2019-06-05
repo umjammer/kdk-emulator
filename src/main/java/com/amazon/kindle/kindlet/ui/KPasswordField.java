@@ -1,29 +1,29 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui;
 
-
 /**
- * KPasswordField is a lightweight component that allows the editing of a single
- * line of text where the view indicates something was typed, but does not show
- * the original characters. You can find further information and examples in How
- * to Use Text Fields, a section in The Java Tutorial. KPasswordField is
- * intended to be source-compatible with KTextField used with echoChar set. It
- * is provided separately to make it easier to safely change the UI for the
- * KTextField without affecting password entries. Serialization of this class is
- * not supported in this version.
+ * KPasswordField is a lightweight component that allows the editing of a single line of text where the view indicates
+ * something was typed, but does not show the original characters. You can find further information and examples in
+ * <A href="http://java.sun.com/docs/books/tutorial/uiswing/components/textfield.html">How to Use Text Fields</A>
+ * , a section in
+ * The Java Tutorial.
  *
- * @see Serialized Form
+ * KPasswordField is intended to be source-compatible with KTextField used with echoChar set.
+ * It is provided separately to make it easier to safely change the UI for the KTextField without affecting password
+ * entries.
+ *
+ * Serialization of this class is not supported in this version.
  */
 public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
+
     /**
      * Constructs a new KPasswordField, with a null starting text string, and 0
      * column width.
      */
     public KPasswordField() {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -34,7 +34,7 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
      *            IllegalArgumentException.
      */
     public KPasswordField(int columns) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -44,7 +44,7 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
      * @param text - the text to be displayed, null if none
      */
     public KPasswordField(java.lang.String text) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -60,22 +60,27 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
      *            is thrown.See Also:TextField
      */
     public KPasswordField(java.lang.String text, int columns) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
-     * Returns true if this KPasswordField has a character set for echoing. A
-     * character is considered to be set if the echo character is not 0.
+     * Returns true if this KPasswordField has a character set for echoing. A character is considered to be set if the
+     * echo character is not 0.
+     * @return true if a character is set for echoing.
+     * @see {@link com.amazon.kindle.kindlet.ui.KPasswordField#getEchoChar()}
      */
     public boolean echoCharIsSet() {
-        return false; // TODO codavaj!!
+        // TODO codavaj!!
+        return false;
     }
 
     /**
      * Returns the character to be used for echoing. The default is '*'.
+     * @return the echo character, 0 if unset
      */
     public char getEchoChar() {
-        return ' '; // TODO codavaj!!
+        // TODO codavaj!!
+        return ' ';
     }
 
     /**
@@ -84,24 +89,31 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
      * setting each character to zero.
      */
     public char[] getPassword() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
-     * Deprecated. Returns the text of the Component.
+     * Deprecated.
+     * <I>Use {@link com.amazon.kindle.kindlet.ui.KPasswordField#getPassword()} instead for security reasons.</I>
+     * Returns the text of the Component.
+     * @return the Components text. null is not
+     *          returned. "no text" set on the Component will cause
+     *          the empty String "" to be returned.
      */
     public java.lang.String getText() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
-     * Returns a string representation of this KPasswordField. This method is
-     * intended to be used only for debugging purposes, and the content and
-     * format of the returned string may vary between implementations. The
-     * returned string may be empty but may not be null.
+     * Returns a string representation of this KPasswordField. This method is intended to be used only for debugging
+     * purposes, and the content and format of the returned string may vary between implementations. The returned string may be
+     * empty but may not be null.
+     * @return a string representation of this KPasswordField
      */
     protected java.lang.String paramString() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
-
 }

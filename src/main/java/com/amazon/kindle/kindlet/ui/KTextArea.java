@@ -1,25 +1,22 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui;
 
-
 /**
- * A KTextArea object is a multi-line region that displays text. It can be set
- * to allow editing or to be read-only. Serialization of this class is not
- * supported in this version.
+ * A KTextArea object is a multi-line region that displays text. It can be set to allow editing or to be read-only.
  *
- * @see KTextField, Serialized Form
+ * Serialization of this class is not supported in this version.
  */
 public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
+
     /**
      * Constructs a new empty text Area. that is platform-dependent.
      *
      * @see TextArea
      */
     public KTextArea() {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -31,7 +28,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *            arguments are negative.
      */
     public KTextArea(int rows, int columns) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -42,7 +39,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *            "" will be displayed.See Also:TextArea
      */
     public KTextArea(java.lang.String text) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -56,7 +53,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *            Also:TextArea
      */
     public KTextArea(java.lang.String text, int rows, int columns) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -69,7 +66,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *            be displayed.See Also:TextArea
      */
     public KTextArea(java.lang.String text, java.lang.String hint) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -84,228 +81,305 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *            the rows or columns arguments are negative.See Also:TextArea
      */
     public KTextArea(java.lang.String text, java.lang.String hint, int rows, int columns) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
-     * Append the given text at the current caret position for this text area
-     * component.
+     * Append the given text at the current caret position for this text area component.
+     * @param text input text to be appended at the current caret position.
      */
     public void append(java.lang.String text) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
-     * Paints the component's border. If you override this in a subclass you
-     * should not make permanent changes to the passed in Graphics. For example,
-     * you should not alter the clip Rectangle or modify the transform. If you
-     * need to do these operations you may find it easier to create a new
-     * Graphics from the passed in Graphics and manipulate it.
+     * Paints the component's border.
+     *
+     * If you override this in a subclass you should not make permanent changes to the passed in Graphics. For example,
+     * you should not alter the clip Rectangle or modify the transform. If you need to do these operations you may find
+     * it easier to create a new Graphics from the passed in Graphics and manipulate it.
+     * @param g the Graphics context in which to paint
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#paint(java.awt.Graphics)},
+     * {@link com.amazon.kindle.kindlet.ui.KTextComponent#setBorder(com.amazon.kindle.kindlet.ui.border.KBorder)}
      */
     protected void drawBorder(java.awt.Graphics g) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
+    /**
+     * @return Returns the horizontal alignment of the text.
+     */
     public int getAlignment() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     public java.awt.Color getBackground() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
      * Returns the position of the caret for the text component.
+     * @return the position of the text caret for the text component. This value will be &gt;= 0.
      */
     public int getCaretPosition() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     /**
      * Returns the number of columns in this text area.
+     * @return the number of columns in the text area
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#setColumns(int)},
+     * {@link com.amazon.kindle.kindlet.ui.KTextArea#getRows()}
      */
     public int getColumns() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     public java.awt.Font getFont() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     public java.awt.Color getForeground() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
-     * Returns that are the distance in pixels between the inside of a border
-     * and the outside of the interior text.
+     * Returns
+     * {@link java.awt.Insets}
+     * that are the distance in pixels between the inside
+     * of a border and the outside of the interior text.
+     * @return Width of margins for this text component or null if
+     *          no margins have been set for this component.
      */
     public java.awt.Insets getMargin() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     public java.awt.Dimension getMinimumSize() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     public java.awt.Dimension getPreferredSize() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
      * Returns the number of rows in the text area.
+     * @return the number of rows in the text area
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#setRows(int)},
+     * {@link com.amazon.kindle.kindlet.ui.KTextArea#getColumns()}
      */
     public int getRows() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     /**
      * Returns the text of the Component.
+     * @return the Components text. null is not
+     *          returned. "no text" set on the Component will cause
+     *          the empty String "" to be returned.
      */
     public java.lang.String getText() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
+    /**
+     * @return Returns the vertical alignment.
+     */
     public int getVerticalAlignment() {
-        return 0; // TODO codavaj!!
+        // TODO codavaj!!
+        return 0;
     }
 
     public void invalidate() {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Returns the boolean indicating whether this KTextArea is editable or not.
+     * @return the boolean value
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextComponent#setEditable(boolean)}
      */
     public boolean isEditable() {
-        return false; // TODO codavaj!!
+        // TODO codavaj!!
+        return false;
     }
 
     public void paint(java.awt.Graphics g) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     protected void processComponentEvent(java.awt.event.ComponentEvent e) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     protected void processFocusEvent(java.awt.event.FocusEvent e) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     protected void processKeyEvent(java.awt.event.KeyEvent e) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the horizontal alignment of the text for this component.
+     * @param alignment The alignment to set.
      */
     public void setAlignment(int alignment) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void setBackground(java.awt.Color color) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void setBounds(int x, int y, int width, int height) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void setBounds(java.awt.Rectangle rect) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the cursor for the component to the input column of the text.
+     * @param position integer value. If it is less than 0 or the cursor value is more than the length of the string, throws an
+     *             IllegalArgumentException.
      */
     public void setCaretPosition(int position) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the number of columns in this text area.
+     * @param columns the number of columns.
+     * @exception java.lang.IllegalArgumentException if the value supplied for columns is less than 0.
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#getColumns()},
+     * {@link java.awt.TextArea#getColumns}
      */
     public void setColumns(int columns) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Deprecated.
+     * <I>Use {@link com.amazon.kindle.kindlet.ui.KTextArea#setCaretPosition(int)} instead.</I>
      */
     public void setCursor(java.awt.Cursor cur) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
-     * Sets the boolean to indicate whether or not this KTextArea should be
-     * editable.
+     * Sets the boolean to indicate whether or not this KTextArea should be editable.
+     * @param b the boolean to be set
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextComponent#isEditable()}
      */
     public void setEditable(boolean b) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
-     * The expected font is set when the text component is not editable or
-     * anti-alias check is enabled else it finds a corresponding cannoical font
-     * name for the the expected font's family, font style and font size.
+     * The expected font is set when the text component is not editable or anti-alias check is enabled else it finds a corresponding
+     * cannoical font name for the the expected font's family, font style and font size.
      */
     public void setFont(java.awt.Font f) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void setForeground(java.awt.Color color) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
-     * Sets the hint text for the component. If non-null, the hint get displays
-     * only if there is no visible text in the component.
+     * Sets the hint text for the component. If non-null, the hint get displays only if there is no visible text in the component.
+     * @param hint text to be displayed when there is no visible text in this component.
      */
     public void setHint(java.lang.String hint) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the width in pixels between the inside of a border and the outside
      * of interior text.
+     * @param insets The margins for the text component.
      */
     public void setMargin(java.awt.Insets insets) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the number of rows for this text area.
+     * @param rows the number of rows
+     * @exception java.lang.IllegalArgumentException if the value supplied for rows is less than 0
+     * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#getRows()},
+     * {@link java.awt.TextArea#getRows}
      */
     public void setRows(int rows) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
-     * Set whether the indicators should be drawn if there are more text than
-     * those that are shown in the area. If set to true, the left and right
-     * margin will be adjusted to allow enough room to draw the indicators.
+     * Set whether the indicators should be drawn if there are more text than those that are shown in the area. If set to true, the
+     * left and right margin will be adjusted to allow enough room to draw the indicators.
+     * @param showMoreTextIndicators boolean set indicators when there is more text than the allocated area in the component.
      */
     public void setShowMoreTextIndicators(boolean showMoreTextIndicators) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Set the text of the Component.
+     * @param text to display in the Component. null is
+     *             converted into "".
      */
     public void setText(java.lang.String text) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     /**
      * Sets the vertical alignment of the text for this component.
+     * @param alignment The alignment to set.
      */
     public void setVerticalAlignment(int alignment) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 
     public void setVisible(boolean value) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
-
 }

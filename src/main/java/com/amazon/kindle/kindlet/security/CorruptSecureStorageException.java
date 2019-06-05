@@ -1,20 +1,19 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.security;
 
-
 /**
- * Thrown when secure storage is corrupt and unable to execute any successful
- * future operation on the store with stability. In the normal operation of the
- * device, this exception should not occur. Its occurrence indicates a hardware
- * level failure. Once this exception has been thrown it is highly unlikely that
- * the data in the store will be recoverable. Developers can use
- * SecureStorage.clear() to re-initialize the store.
+ * Thrown when secure storage is corrupt and unable to execute any successful future operation on the store
+ * with stability.
  *
+ * In the normal operation of the device, this exception should not occur.  Its occurrence indicates
+ * a hardware level failure. Once this exception has been thrown it is highly unlikely that the data in
+ * the store will be recoverable.  Developers can use
+ * {@link com.amazon.kindle.kindlet.security.SecureStorage#clear()}
+ * to re-initialize the
+ * store.
  * @since 1.0
- * @see SecureStorage
  */
 public class CorruptSecureStorageException extends java.lang.RuntimeException {
 

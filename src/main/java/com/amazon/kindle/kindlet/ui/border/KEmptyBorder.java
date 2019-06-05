@@ -1,12 +1,11 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.ui.border;
 
 /**
- * An empty border that is transparent and draws nothing. The insets of the
- * border can be specified at the construction time.
+ * An empty border that is transparent and draws nothing. The insets of the border
+ * can be specified at the construction time.
  */
 public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractBorder {
 
@@ -34,7 +33,7 @@ public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractB
      * Creates an empty border with no size.
      */
     public KEmptyBorder() {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -43,7 +42,7 @@ public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractB
      * @param borderInsets - the border's insets
      */
     public KEmptyBorder(java.awt.Insets borderInsets) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
@@ -53,35 +52,54 @@ public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractB
      *            insetright - the right inset
      */
     public KEmptyBorder(int top, int left, int bottom, int right) {
-        // TODO codavaj!!
+    // TODO codavaj!!
     }
 
     /**
      * Returns this border's insets.
+     * @return this border's insets
      */
     public java.awt.Insets getBorderInsets() {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
      * Returns all zero insets.
+     * @param c the component to obtain insets for
+     * @return a new copy of this borders insets for the supplied component
      */
     public java.awt.Insets getBorderInsets(java.awt.Component c) {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
-     * Updates an existing instance of Insets with the border insets. After
-     * executing the value of insets should be equal to the result of .
+     * Updates an existing instance of Insets with the border insets.
+     * After executing the value of insets should be equal to
+     * the result of
+     * {@link com.amazon.kindle.kindlet.ui.border.KAbstractBorder#getBorderInsets(java.awt.Component)}
+     * .
+     * @param c the component to obtain insets for
+     * @param insets the insets object to fill with the current insets
+     * @return the updated insets
      */
     public java.awt.Insets getBorderInsets(java.awt.Component c, java.awt.Insets insets) {
-        return null; // TODO codavaj!!
+        // TODO codavaj!!
+        return null;
     }
 
     /**
      * Paint nothing.
+     * @param c the component
+     * @param g the graphics to use for painting
+     * @param x the x position of the border
+     * @param y the y position of the border
+     * @param width the width of the border
+     * @param height the height of the border
      */
     public void paintBorder(java.awt.Component c, java.awt.Graphics g, int x, int y, int width, int height) {
-        return; // TODO codavaj!!
+        // TODO codavaj!!
+        return;
     }
 }

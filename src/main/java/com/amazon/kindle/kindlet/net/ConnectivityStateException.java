@@ -1,18 +1,14 @@
 /*
  * (C) 1996-2010 Amazon.com, Inc. and its affiliates.
  */
-
 package com.amazon.kindle.kindlet.net;
 
-
 /**
- * Thrown to indicate that the application's current connectivity status does
- * now allow creation of network connections. Callbacks from
- * Connectivity.submitConnectivityRequest(ConnectivityHandler) provide more
- * details.
- *
- * @see Connectivity.submitConnectivityRequest(ConnectivityHandler)
- * @see NetworkDisabledDetails
+ * Thrown to indicate that the application's current connectivity status does now allow creation of network
+ * connections. Callbacks from
+ * {@link com.amazon.kindle.kindlet.net.Connectivity#submitConnectivityRequest(com.amazon.kindle.kindlet.net.ConnectivityHandler)}
+ * provide
+ * more details.
  */
 public class ConnectivityStateException extends java.io.IOException {
 
