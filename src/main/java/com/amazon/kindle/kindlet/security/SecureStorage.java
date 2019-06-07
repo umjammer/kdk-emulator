@@ -89,7 +89,7 @@ public interface SecureStorage {
      * Removes any data associated with the supplied key from the store.
      * @param key the key to remove data for
      * @return true if successful, false if the key was null, was unsuccessful or did not exist in the secure store
-     * @exception com.amazon.kindle.kindlet.security.CorruptSecureStorageException an unexpected error occurred persisting the store and it was not possible to roll-back to the previous state.
+     * @throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException an unexpected error occurred persisting the store and it was not possible to roll-back to the previous state.
      *              Clients are should call {@link com.amazon.kindle.kindlet.security.SecureStorage#clear()}, if they want to re-initialize the store.
      */
     abstract boolean remove(java.lang.String key) throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException;

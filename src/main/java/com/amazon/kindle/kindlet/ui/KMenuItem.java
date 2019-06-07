@@ -16,10 +16,9 @@ package com.amazon.kindle.kindlet.ui;
 public class KMenuItem {
 
     /**
-     * Creates a new menu item with no label (""). This is not the same as a
-     * separator.
-     *
-     * @see KMenu.addSeparator()
+     * Creates a new menu item with no label (""). This is not the same
+     * as a separator.
+     * @see {@link com.amazon.kindle.kindlet.ui.KMenu#addSeparator()}
      */
     public KMenuItem() {
     // TODO codavaj!!
@@ -27,8 +26,7 @@ public class KMenuItem {
 
     /**
      * Creates a new menu with the supplied label.
-     *
-     * @param label - the label for this menu item
+     * @param label the label for this menu item
      */
     public KMenuItem(java.lang.String label) {
     // TODO codavaj!!

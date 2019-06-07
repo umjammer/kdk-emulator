@@ -19,45 +19,37 @@ package com.amazon.kindle.kindlet.ui;
 public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
 
     /**
-     * Constructs a new KPasswordField, with a null starting text string, and 0
-     * column width.
+     * Constructs a new KPasswordField, with a null starting text string, and 0 column width.
      */
     public KPasswordField() {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new empty KPasswordField with the specified number of
-     * columns. The initial string text is set to null.
-     *
-     * @param columns - the number of columns >= 0 else throws an
-     *            IllegalArgumentException.
+     * Constructs a new empty KPasswordField with the specified number of columns. The initial string text is set to
+     * null.
+     * @param columns the number of columns &gt;= 0 else throws an IllegalArgumentException.
      */
     public KPasswordField(int columns) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new KPasswordField initialized with the specified text and
-     * the number of columns to 0.
-     *
-     * @param text - the text to be displayed, null if none
+     * Constructs a new KPasswordField initialized with the specified text and the number of columns to 0.
+     * @param text the text to be displayed, null if none
      */
     public KPasswordField(java.lang.String text) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text field initialized with the specified text to be
-     * displayed, and wide enough to hold the specified number of columns. A
-     * column is an approximate average character width that is
-     * platform-dependent.
-     *
-     * @param text - the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.columns - the number of columns. If
-     *            columns is less than 0 or more than
-     *            java.lang.Integer.MAX_VALUE, an UnsupportedOperationException
-     *            is thrown.See Also:TextField
+     * Constructs a new text field initialized with the specified text to be displayed, and wide enough to hold the specified number
+     * of columns. A column is an approximate average character width that is platform-dependent.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param columns the number of columns. If columns is less than 0 or more than
+     *             java.lang.Integer.MAX_VALUE, an UnsupportedOperationException
+     *              is thrown.
+     * @see {@link java.awt.TextField}
      */
     public KPasswordField(java.lang.String text, int columns) {
     // TODO codavaj!!

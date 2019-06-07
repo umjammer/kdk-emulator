@@ -28,10 +28,10 @@ public class Timer {
     private java.util.Timer timer;
 
     /**
-     * Construct a new Timer. Kindle developers must use this class instead of
-     * java.util.Timer.
+     * Construct a new Timer.
      *
-     * @see Timer.Timer()
+     * Kindle developers must use this class instead of java.util.Timer.
+     * @see {@link java.util.Timer#Timer()}
      */
     public Timer() {
         timer = new java.util.Timer();
@@ -39,9 +39,8 @@ public class Timer {
 
     /**
      * Construct a new Timer.
-     *
      * @param isDaemon ignored since all Kindle Timer's are treated as deamons
-     * @see Timer.Timer(boolean)
+     * @see {@link java.util.Timer#Timer(boolean)}
      */
     public Timer(boolean isDaemon) {
         timer = new java.util.Timer(isDaemon);
@@ -59,9 +58,9 @@ public class Timer {
      * Schedules the task to execute at a specific time.
      * @param task task to execute
      * @param time time to execute the task
-     * @exception java.lang.IllegalArgumentException if the time to execute is in the past
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if the time to execute is in the past
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer#schedule(java.util.TimerTask, java.util.Date)}
      */
     public void schedule(com.amazon.kindle.kindlet.util.TimerTask task, java.util.Date time) {
@@ -73,9 +72,9 @@ public class Timer {
      * @param task task to execute
      * @param firstTime time to execute the task
      * @param period millisecond delay between task executions
-     * @exception java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer#schedule(java.util.TimerTask, java.util.Date, long)}
      */
     public void schedule(com.amazon.kindle.kindlet.util.TimerTask task, java.util.Date firstTime, long period) {
@@ -87,9 +86,9 @@ public class Timer {
      * Executes the task after a specific delay.
      * @param task task to execute
      * @param delay millisecond delay before the task is executed
-     * @exception java.lang.IllegalArgumentException if delay is negative or adding the delay to System.currentTimeMillis causes an overflow
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if delay is negative or adding the delay to System.currentTimeMillis causes an overflow
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer#schedule(java.util.TimerTask, long)}
      */
     public void schedule(com.amazon.kindle.kindlet.util.TimerTask task, long delay) {
@@ -103,9 +102,9 @@ public class Timer {
      * @param task task to execute
      * @param delay millisecond delay before the first task is executed
      * @param period millisecond delay between task executions
-     * @exception java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer#schedule(java.util.TimerTask, long, long)}
      */
     public void schedule(com.amazon.kindle.kindlet.util.TimerTask task, long delay, long period) {
@@ -119,9 +118,9 @@ public class Timer {
      * @param task task to execute
      * @param firstTime time to execute the task
      * @param period millisecond delay between task executions
-     * @exception java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task or date is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer#scheduleAtFixedRate(java.util.TimerTask, java.util.Date, long)}
      */
     public void scheduleAtFixedRate(com.amazon.kindle.kindlet.util.TimerTask task, java.util.Date firstTime, long period) {
@@ -135,9 +134,9 @@ public class Timer {
      * @param task task to execute
      * @param delay millisecond delay before the first task is executed
      * @param period millisecond delay between task executions
-     * @exception java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
-     * @exception java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
-     * @exception java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
+     * @throws java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
+     * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
+     * @throws java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
      * @see {@link java.util.Timer$html#scheduleAtFixedRate(TimerTask, long, long)}
      */
     public void scheduleAtFixedRate(com.amazon.kindle.kindlet.util.TimerTask task, long delay, long period) {

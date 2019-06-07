@@ -24,21 +24,19 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Constructs a new empty text field. that is platform-dependent.
-     *
-     * @see TextField
+     * @see {@link java.awt.TextField}
      */
     public KTextField() {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new empty text field with the specified number of columns. A
-     * column is an approximate average character width that is
-     * platform-dependent.
+     * Constructs a new empty text field with the specified number of columns. A column is an approximate average character width
+     * that is platform-dependent.
+     * @param columns the number of columns. If columns is less than 0, columns is set to 0
      *
-     * @param columns the number of columns. If columns is less than 0, columns
-     *            is set to 0
-     * @see TextField
+     *             .
+     * @see {@link java.awt.TextField}
      */
     public KTextField(int columns) {
     // TODO codavaj!!
@@ -46,86 +44,67 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Constructs a new empty text field prefilled with the specified text.
-     *
-     * @param text the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.
-     * @see TextField
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed. .
+     * @see {@link java.awt.TextField}
      */
     public KTextField(java.lang.String text) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text field initialized with the specified text to be
-     * displayed, and wide enough to hold the specified number of columns. A
-     * column is an approximate average character width that is
-     * platform-dependent.
-     *
-     * @param text the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.
-     * @param columns the number of columns. If columns is less than 0, an
-     *            IllegalArgumentException is thrown.
-     * @see TextField
+     * Constructs a new text field initialized with the specified text to be displayed, and wide enough to hold the specified number
+     * of columns. A column is an approximate average character width that is platform-dependent.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param columns the number of columns. If columns is less than 0, an IllegalArgumentException
+     *              is thrown.
+     * @see {@link java.awt.TextField}
      */
     public KTextField(java.lang.String text, int columns) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text field initialized with the specified text to be
-     * displayed, and wide enough to hold the specified number of columns. A
-     * column is an approximate average character width that is
-     * platform-dependent. This is made package level so as the KPasswordField
-     * can re-use it without re-initializing the peer.
+     * Constructs a new text field initialized with the specified text to be displayed, and wide enough to hold the specified number
+     * of columns. A column is an approximate average character width that is platform-dependent.
      *
-     * @param text the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.
-     * @param columns the number of columns. If columns is less than 0 or more
-     *            than java.lang.Integer.MAX_VALUE, an
-     *            UnsupportedOperationException is thrown.
-     * @param hint the text to be displayed when the component is empty. If text
-     *            is null, the empty string "" will be displayed.
-     * @see TextField
-     * @see setColumns(int)
+     * This is made package level so as the KPasswordField can re-use it without re-initializing the peer.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param columns the number of columns. If columns is less than 0 or more than
+     *             java.lang.Integer.MAX_VALUE, an UnsupportedOperationException
+     *              is thrown.
+     * @param hint the text to be displayed when the component is empty. If text is null, the empty string "" will be displayed.
+     * @see {@link java.awt.TextField},
+     * {@link com.amazon.kindle.kindlet.ui.KTextField#setColumns(int)}
      */
     public KTextField(java.lang.String text, int columns, java.lang.String hint) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text field initialized with the specified text to be
-     * displayed, and wide enough to hold the specified number of columns. A
-     * column is an approximate average character width that is
-     * platform-dependent. This is protected to allow extension of this
-     * Component without re-initializing the peer.
+     * Constructs a new text field initialized with the specified text to be displayed, and wide enough to hold the specified number
+     * of columns. A column is an approximate average character width that is platform-dependent.
      *
-     * @param text the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.
-     * @param columns the number of columns. If columns is less than 0 or more
-     *            than java.lang.Integer.MAX_VALUE, an
-     *            UnsupportedOperationException is thrown.
-     * @param hint the text to be displayed when the component is empty. If text
-     *            is null, the empty string "" will be displayed.
-     * @param isPassword If true then the text field will behave as a password
-     *            field.
-     * @see TextField
-     * @see setColumns(int)
+     * This is protected to allow extension of this Component without re-initializing the peer.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param columns the number of columns. If columns is less than 0 or more than
+     *             java.lang.Integer.MAX_VALUE, an UnsupportedOperationException
+     *              is thrown.
+     * @param hint the text to be displayed when the component is empty. If text is null, the empty string "" will be displayed.
+     * @param isPassword If true then the text field will behave as a password field.
+     * @see {@link java.awt.TextField},
+     * {@link com.amazon.kindle.kindlet.ui.KTextField#setColumns(int)}
      */
     protected KTextField(java.lang.String text, int columns, java.lang.String hint, boolean isPassword) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new empty text field prefilled with the specified text and
-     * an alternate text which gets displayed when the actual text content of
-     * this text field is empty.
-     *
-     * @param text the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.
-     * @param hint the text to be displayed when the textual content component
-     *            is empty. If hint is null, the empty string "" will be
-     *            displayed by default.
-     * @see TextField
+     * Constructs a new empty text field prefilled with the specified text and an alternate text which gets displayed when the
+     * actual text content of this text field is empty.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param hint the text to be displayed when the textual content component is empty. If hint is null, the empty
+     *             string "" will be displayed by default.
+     * @see {@link java.awt.TextField}
      */
     public KTextField(java.lang.String text, java.lang.String hint) {
     // TODO codavaj!!
@@ -304,7 +283,7 @@ public class KTextField extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * {@link com.amazon.kindle.kindlet.ui.KTextField#getText()}
      * and its column width.
      * @param columns the number of columns.
-     * @exception java.lang.UnsupportedOperationException if the value supplied for columns is less than 0 or more than
+     * @throws java.lang.UnsupportedOperationException if the value supplied for columns is less than 0 or more than
      *              java.lang.Integer.MAX_VALUE.
      * @see {@link java.awt.TextField#getColumns}
      */

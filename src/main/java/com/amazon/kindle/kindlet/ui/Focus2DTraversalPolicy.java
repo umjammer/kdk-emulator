@@ -32,7 +32,7 @@ public abstract class Focus2DTraversalPolicy extends java.awt.FocusTraversalPoli
      * @param focusCycleRoot a focus cycle root of the supplied component
      * @param component a child of the supplied focusCycleRoot or the root itself
      * @return the component to focus, or null if none was found
-     * @exception java.lang.IllegalArgumentException if focusCycleRoot is not a root for component, or either
+     * @throws java.lang.IllegalArgumentException if focusCycleRoot is not a root for component, or either
      *  are null
      */
     public abstract java.awt.Component getComponentAbove(java.awt.Container focusCycleRoot, java.awt.Component component);
@@ -44,7 +44,7 @@ public abstract class Focus2DTraversalPolicy extends java.awt.FocusTraversalPoli
      * @param focusCycleRoot a focus cycle root of the supplied component
      * @param component a child of the supplied focusCycleRoot or the root itself
      * @return the component to focus, or null if none was found
-     * @exception java.lang.IllegalArgumentException if focusCycleRoot is not a root for component, or either
+     * @throws java.lang.IllegalArgumentException if focusCycleRoot is not a root for component, or either
      *  are null
      */
     public abstract java.awt.Component getComponentBelow(java.awt.Container focusCycleRoot, java.awt.Component component);
@@ -81,7 +81,7 @@ public abstract class Focus2DTraversalPolicy extends java.awt.FocusTraversalPoli
      * transfers control to one of it's children based on the current direction
      * of focus navigation.
      * @param edgePolicy The edge policy to set for this instance.
-     * @exception java.lang.IllegalArgumentException if the edgePolicy value is
+     * @throws java.lang.IllegalArgumentException if the edgePolicy value is
      *          not supported.
      */
     public abstract void setEdgePolicy(com.amazon.kindle.kindlet.ui.FocusTraversalEdgePolicy edgePolicy);

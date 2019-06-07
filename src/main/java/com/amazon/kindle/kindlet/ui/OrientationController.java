@@ -37,10 +37,10 @@ public interface OrientationController {
     /**
      * Gets the device's current orientation.
      * @return The device's current orientation.
-     *       One of the following constants: <A href="../../../../../com/amazon/kindle/kindlet/ui/KindleOrientation.html#PORTRAIT">KindleOrientation.PORTRAIT</A>,
-     *       <A href="../../../../../com/amazon/kindle/kindlet/ui/KindleOrientation.html#LANDSCAPE">KindleOrientation.LANDSCAPE</A>,
-     *       <A href="../../../../../com/amazon/kindle/kindlet/ui/KindleOrientation.html#INVERTED_PORTRAIT">KindleOrientation.INVERTED_PORTRAIT</A> or
-     *       <A href="../../../../../com/amazon/kindle/kindlet/ui/KindleOrientation.html#INVERTED_LANDSCAPE">KindleOrientation.INVERTED_LANDSCAPE</A>
+     *       One of the following constants: {@link com.amazon.kindle.kindlet.ui.KindleOrientation#PORTRAIT},
+     *       {@link com.amazon.kindle.kindlet.ui.KindleOrientation#LANDSCAPE},
+     *       {@link com.amazon.kindle.kindlet.ui.KindleOrientation#INVERTED_PORTRAIT} or
+     *       {@link com.amazon.kindle.kindlet.ui.KindleOrientation#INVERTED_LANDSCAPE}
      */
     abstract int getOrientation();
 
@@ -51,7 +51,7 @@ public interface OrientationController {
      *             {@link com.amazon.kindle.kindlet.ui.KindleOrientation#LANDSCAPE},
      *             {@link com.amazon.kindle.kindlet.ui.KindleOrientation#INVERTED_PORTRAIT} or
      *             {@link com.amazon.kindle.kindlet.ui.KindleOrientation#INVERTED_LANDSCAPE}
-     * @exception java.lang.IllegalArgumentException If orientation passed is not one of the valid constants.
+     * @throws java.lang.IllegalArgumentException If orientation passed is not one of the valid constants.
      */
     abstract void lockOrientation(int orientation);
 

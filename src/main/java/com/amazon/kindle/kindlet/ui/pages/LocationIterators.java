@@ -30,7 +30,7 @@ public final class LocationIterators {
      *    iterator
      * @param forward if true this iterator will advance in increasing value of index, if false it will move
      *    backwards
-     * @exception java.lang.IndexOutOfBoundsException if the supplied index is invalid
+     * @throws java.lang.IndexOutOfBoundsException if the supplied index is invalid
      */
     public static com.amazon.kindle.kindlet.ui.pages.LocationIterator locationIterator(java.util.List list, int index, boolean forward) {
         // TODO codavaj!!

@@ -11,8 +11,8 @@ package com.amazon.kindle.kindlet.ui;
 public class KTextOptionOrientationMenu implements com.amazon.kindle.kindlet.ui.KTextOptionMenu {
 
     /**
-     * Standard Kindle orientation menu. Add to a KTextOptionPane to display the
-     * system orientation menu.
+     * Standard Kindle orientation menu.  Add to a KTextOptionPane to display
+     * the system orientation menu.
      */
     public KTextOptionOrientationMenu() {
     // TODO codavaj!!

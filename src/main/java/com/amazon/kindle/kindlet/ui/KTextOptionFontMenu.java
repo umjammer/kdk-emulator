@@ -11,21 +11,19 @@ package com.amazon.kindle.kindlet.ui;
 public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptionMenuSelectable {
 
     /**
-     * Construct a font size change listener. The default Kindle font size and
-     * font size array will be used.
+     * Construct a font size change listener.  The default Kindle font size and font size
+     * array will be used.
      */
     public KTextOptionFontMenu() {
     // TODO codavaj!!
     }
 
     /**
-     * Construct a font size change listener. The default Kindle font size array
-     * will be used.
-     *
-     * @param selectedFontSize selected font size. This font size is used to set
-     *            the initial selected value on the font size selection dialog
-     *            when it first appears.
-     * @throws IllegalArgumentException if the selectedFontSize is <= 0
+     * Construct a font size change listener.  The default Kindle font size
+     * array will be used.
+     * @param selectedFontSize selected font size.  This font size is used to set the initial selected value
+     *  on the font size selection dialog when it first appears.
+     * @throws java.lang.IllegalArgumentException if the selectedFontSize is &lt;= 0
      */
     public KTextOptionFontMenu(int selectedFontSize) {
     // TODO codavaj!!
@@ -68,7 +66,7 @@ public class KTextOptionFontMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * Sets the selected font size
      * @param selectedFontSize selected font size.  This font size is used to set the initial selected value
      *  on the font size selection dialog when it first appears.
-     * @exception java.lang.IllegalArgumentException if the selectedFontSize is &lt;= 0
+     * @throws java.lang.IllegalArgumentException if the selectedFontSize is &lt;= 0
      */
     public void setSelected(int selectedFontSize) {
         // TODO codavaj!!

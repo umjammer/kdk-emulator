@@ -19,8 +19,8 @@ public class KTextOptionPane {
      * Adds a font size menu to the the text option.
      * @param index index at which the specified element is to be inserted
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
+     * @throws java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
      */
     public void addFontSizeMenu(int index, com.amazon.kindle.kindlet.ui.KTextOptionFontMenu menu) {
         // TODO codavaj!!
@@ -30,7 +30,7 @@ public class KTextOptionPane {
     /**
      * Adds a font size menu to the bottom of the text option.
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IllegalArgumentException if menu is null
      */
     public void addFontSizeMenu(com.amazon.kindle.kindlet.ui.KTextOptionFontMenu menu) {
         // TODO codavaj!!
@@ -41,8 +41,8 @@ public class KTextOptionPane {
      * Adds a user configurable list menu to text option
      * @param index index at which the specified element is to be inserted
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size())
+     * @throws java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size())
      */
     public void addListMenu(int index, com.amazon.kindle.kindlet.ui.KTextOptionListMenu menu) {
         // TODO codavaj!!
@@ -52,7 +52,7 @@ public class KTextOptionPane {
     /**
      * Adds a user configurable list menu to the bottom of the text option.
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IllegalArgumentException if menu is null
      */
     public void addListMenu(com.amazon.kindle.kindlet.ui.KTextOptionListMenu menu) {
         // TODO codavaj!!
@@ -63,8 +63,8 @@ public class KTextOptionPane {
      * Adds a orientation menu to the bottom of the text option.
      * @param index index at which the specified element is to be inserted
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
+     * @throws java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
      */
     public void addOrientationMenu(int index, com.amazon.kindle.kindlet.ui.KTextOptionOrientationMenu menu) {
         // TODO codavaj!!
@@ -74,7 +74,7 @@ public class KTextOptionPane {
     /**
      * Adds a orientation menu to the bottom of the text option.
      * @param menu menu to add
-     * @exception java.lang.IllegalArgumentException if menu is null
+     * @throws java.lang.IllegalArgumentException if menu is null
      */
     public void addOrientationMenu(com.amazon.kindle.kindlet.ui.KTextOptionOrientationMenu menu) {
         // TODO codavaj!!
@@ -94,7 +94,7 @@ public class KTextOptionPane {
      * Removes a menu at the specified index.
      * @param index index of menu to remove
      * @return menu object removed
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
      */
     public com.amazon.kindle.kindlet.ui.KTextOptionMenu remove(int index) {
         // TODO codavaj!!

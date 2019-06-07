@@ -11,11 +11,10 @@ package com.amazon.kindle.kindlet.ui;
 public class KTextOptionMenuItem {
 
     /**
-     * Construct a new option menu item with the given text. The menu item is
-     * displayed using text.toString().
-     *
+     * Construct a new option menu item with the given text.  The menu item
+     * is displayed using text.toString().
      * @param value option item value
-     * @throws IllegalArgumentException if text is null
+     * @throws java.lang.IllegalArgumentException if text is null
      */
     public KTextOptionMenuItem(java.lang.Object value) {
     // TODO codavaj!!
@@ -42,7 +41,7 @@ public class KTextOptionMenuItem {
     /**
      * Sets the menu item value
      * @param value menu item value
-     * @exception java.lang.IllegalArgumentException if value is null
+     * @throws java.lang.IllegalArgumentException if value is null
      */
     public void setValue(java.lang.Object value) {
         // TODO codavaj!!

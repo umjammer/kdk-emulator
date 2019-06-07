@@ -48,8 +48,7 @@ public class KLineBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractBo
 
     /**
      * Creates a black line border of the specified width, with rounded corners.
-     *
-     * @param thickness - the line width of the border
+     * @param thickness the line width of the border
      */
     public KLineBorder(int thickness) {
     // TODO codavaj!!
@@ -57,9 +56,8 @@ public class KLineBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractBo
 
     /**
      * Creates a black line border.
-     *
-     * @param thickness - the line width of the borderroundedCorners - true if
-     *            the corners should be rounded
+     * @param thickness the line width of the border
+     * @param roundedCorners true if the corners should be rounded
      */
     public KLineBorder(int thickness, boolean roundedCorners) {
     // TODO codavaj!!

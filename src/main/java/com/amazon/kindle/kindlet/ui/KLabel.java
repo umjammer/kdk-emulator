@@ -29,8 +29,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Construct a label with the supplied text and default alignment.
-     *
-     * @param text - text to display
+     * @param text text to display
      */
     public KLabel(java.lang.String text) {
     // TODO codavaj!!
@@ -39,11 +38,10 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Construct a label with the supplied text and a specific horizontal
      * alignment.
-     *
-     * @param text - text to displayhorizontalAlignment - horizontal alignment
-     *            of the label within its bounds Throws:
-     *            IllegalArgumentException - if the horizontal alignment is not
-     *            validSee Also:setVerticalAlignment(int)
+     * @param text text to display
+     * @param horizontalAlignment horizontal alignment of the label within its bounds
+     * @throws java.lang.IllegalArgumentException if the horizontal alignment is not valid
+     * @see {@link com.amazon.kindle.kindlet.ui.KLabel#setVerticalAlignment(int)}
      */
     public KLabel(java.lang.String text, int horizontalAlignment) {
     // TODO codavaj!!
@@ -56,7 +54,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *                   if key is not valid.
      * @return The value of key as a convenience. This value is not
      *          justified or modified in any way.
-     * @exception java.lang.IllegalArgumentException Thrown if key is not a legal
+     * @throws java.lang.IllegalArgumentException Thrown if key is not a legal
      *          value.
      */
     protected int checkHorizontalKey(int key, java.lang.String message) {
@@ -71,7 +69,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *                   if key is not valid.
      * @return The value of key as a convenience. This value is not
      *          justified or modified in any way.
-     * @exception java.lang.IllegalArgumentException Thrown if key is not a legal
+     * @throws java.lang.IllegalArgumentException Thrown if key is not a legal
      *          value.
      */
     protected int checkVerticalKey(int key, java.lang.String message) {
@@ -107,7 +105,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
      *                 method will return 0.
      * @return local y coordinate of the baseline within the text that fits inside
      *                 the supplied height
-     * @exception java.lang.IllegalArgumentException if width or height argument is less then zero.
+     * @throws java.lang.IllegalArgumentException if width or height argument is less then zero.
      */
     public int getBaseline(int width, int height) {
         // TODO codavaj!!
@@ -116,8 +114,8 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Returns the current horizontal alignment value for the text in this component.
-     * @return one of <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#CENTER">KTextComponent.CENTER</A>, <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#LEADING">KTextComponent.LEADING</A>, or
-     *          <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#TRAILING">KTextComponent.TRAILING</A>
+     * @return one of {@link com.amazon.kindle.kindlet.ui.KTextComponent#CENTER}, {@link com.amazon.kindle.kindlet.ui.KTextComponent#LEADING}, or
+     *          {@link com.amazon.kindle.kindlet.ui.KTextComponent#TRAILING}
      */
     public int getHorizontalAlignment() {
         // TODO codavaj!!
@@ -147,8 +145,8 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Returns the current vertical alignment value for the text in this component.
-     * @return one of <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#CENTER">KTextComponent.CENTER</A>, <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#TOP">KTextComponent.TOP</A>, or
-     *          <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#BOTTOM">KTextComponent.BOTTOM</A>
+     * @return one of {@link com.amazon.kindle.kindlet.ui.KTextComponent#CENTER}, {@link com.amazon.kindle.kindlet.ui.KTextComponent#TOP}, or
+     *          {@link com.amazon.kindle.kindlet.ui.KTextComponent#BOTTOM}
      */
     public int getVerticalAlignment() {
         // TODO codavaj!!
@@ -205,7 +203,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * Set the horizontal alignment for the text in this component.
      * @param alignment one of {@link com.amazon.kindle.kindlet.ui.KTextComponent#CENTER}, {@link com.amazon.kindle.kindlet.ui.KTextComponent#LEADING}, or
      *                    {@link com.amazon.kindle.kindlet.ui.KTextComponent#TRAILING}
-     * @exception java.lang.IllegalArgumentException if the alignment argument is not
+     * @throws java.lang.IllegalArgumentException if the alignment argument is not
      *          a valid horizontal alignment value
      */
     public void setHorizontalAlignment(int alignment) {
@@ -227,7 +225,7 @@ public class KLabel extends com.amazon.kindle.kindlet.ui.KTextComponent {
      * Set the vertical alignment for this text component.
      * @param alignment one of {@link com.amazon.kindle.kindlet.ui.KTextComponent#CENTER}, {@link com.amazon.kindle.kindlet.ui.KTextComponent#TOP}, or
      *                    {@link com.amazon.kindle.kindlet.ui.KTextComponent#BOTTOM}
-     * @exception java.lang.IllegalArgumentException if the alignment argument is not
+     * @throws java.lang.IllegalArgumentException if the alignment argument is not
      *          a valid vertical alignment value
      */
     public void setVerticalAlignment(int alignment) {

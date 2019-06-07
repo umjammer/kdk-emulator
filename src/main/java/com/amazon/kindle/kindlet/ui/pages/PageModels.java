@@ -39,7 +39,7 @@ public final class PageModels {
          * is thrown.
          * @param location a location
          * @return the object at the requested location
-         * @exception java.util.NoSuchElementException if the location is invalid
+         * @throws java.util.NoSuchElementException if the location is invalid
          */
         public java.lang.Object getElementAt(int location) throws java.util.NoSuchElementException {
             // TODO codavaj!!
@@ -54,7 +54,7 @@ public final class PageModels {
          * value.
          *
          * This method is expected to return quickly.
-         * @return the first location in this set of pages, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A>
+         * @return the first location in this set of pages, or {@link java.lang.Integer#MIN_VALUE}
          *    if unknown
          */
         public int getFirstLocation() {
@@ -74,7 +74,7 @@ public final class PageModels {
          * from.
          *
          * This method is expected to return quickly.
-         * @return the initial location or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A> if the model is empty
+         * @return the initial location or {@link java.lang.Integer#MIN_VALUE} if the model is empty
          */
         public int getInitialLocation() {
             // TODO codavaj!!
@@ -89,7 +89,7 @@ public final class PageModels {
          * value.
          *
          * This method is expected to return quickly.
-         * @return the last location in this set of pages, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MAX_VALUE">Integer.MAX_VALUE</A>
+         * @return the last location in this set of pages, or {@link java.lang.Integer#MAX_VALUE}
          *    if unknown
          */
         public int getLastLocation() {

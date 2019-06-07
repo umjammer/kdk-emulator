@@ -37,7 +37,7 @@ public interface PageModel {
      * is thrown.
      * @param location a location
      * @return the object at the requested location
-     * @exception java.util.NoSuchElementException if the location is invalid
+     * @throws java.util.NoSuchElementException if the location is invalid
      */
     abstract java.lang.Object getElementAt(int location) throws java.util.NoSuchElementException;
 
@@ -49,7 +49,7 @@ public interface PageModel {
      * value.
      *
      * This method is expected to return quickly.
-     * @return the first location in this set of pages, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A>
+     * @return the first location in this set of pages, or {@link java.lang.Integer#MIN_VALUE}
      *    if unknown
      */
     abstract int getFirstLocation();
@@ -66,7 +66,7 @@ public interface PageModel {
      * from.
      *
      * This method is expected to return quickly.
-     * @return the initial location or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A> if the model is empty
+     * @return the initial location or {@link java.lang.Integer#MIN_VALUE} if the model is empty
      */
     abstract int getInitialLocation();
 
@@ -78,7 +78,7 @@ public interface PageModel {
      * value.
      *
      * This method is expected to return quickly.
-     * @return the last location in this set of pages, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MAX_VALUE">Integer.MAX_VALUE</A>
+     * @return the last location in this set of pages, or {@link java.lang.Integer#MAX_VALUE}
      *    if unknown
      */
     abstract int getLastLocation();

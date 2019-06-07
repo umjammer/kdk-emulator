@@ -13,7 +13,7 @@ package com.amazon.kindle.kindlet.ui;
 public class KPages extends com.amazon.kindle.kindlet.ui.KPagedContainer {
 
     /**
-     * Creates a new set of pages. Each item in the page receives a full-page.
+     * Creates a new set of pages.  Each item in the page receives a full-page.
      */
     public KPages() {
         // TODO codavaj!!
@@ -22,8 +22,7 @@ public class KPages extends com.amazon.kindle.kindlet.ui.KPagedContainer {
 
     /**
      * Creates a new set of pages.
-     *
-     * @param pageProvider - the provider of pages
+     * @param pageProvider the provider of pages
      */
     public KPages(com.amazon.kindle.kindlet.ui.pages.PageProvider pageProvider) {
         // TODO codavaj!!

@@ -18,8 +18,7 @@ public class KMenuEvent extends java.util.EventObject {
 
     /**
      * Create a menu event for the given menu source.
-     *
-     * @param source - menu creating the event
+     * @param source menu creating the event
      */
     public KMenuEvent(java.lang.Object source) {
         super(source);

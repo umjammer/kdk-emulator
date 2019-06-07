@@ -19,10 +19,8 @@ package com.amazon.kindle.kindlet.ui;
 public class KBox extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
-     * Create a new container for components that are aligned along the
-     * indicated axis.
-     *
-     * @param axis - one of the constants from KBoxLayout
+     * Create a new container for components that are aligned along the indicated axis.
+     * @param axis one of the constants from {@link com.amazon.kindle.kindlet.ui.KBoxLayout}
      */
     public KBox(int axis) {
     // TODO codavaj!!
@@ -113,7 +111,7 @@ public class KBox extends com.amazon.kindle.kindlet.ui.KComponent {
      * KBox does not permit alternate layouts.  This method always throws
      * an exception.
      * @param layout ignored
-     * @exception java.awt.AWTError always
+     * @throws java.awt.AWTError always
      */
     public void setLayout(java.awt.LayoutManager layout) {
         // TODO codavaj!!

@@ -164,7 +164,7 @@ public abstract class KTextComponent extends com.amazon.kindle.kindlet.ui.KCompo
      *          called or the size of the rows and columns using the current
      *          Font set on this Component. To invalidate
      *          the cached value and recalculate the minimum size call
-     *          <A href="http://java.sun.com/javame/reference/apis/jsr217/java/awt/Component.html#invalidate()">Component.invalidate()</A>.
+     *          {@link java.awt.Component#invalidate()}.
      */
     protected java.awt.Dimension getMinimumSize(int rows, int columns) {
         // TODO codavaj!!

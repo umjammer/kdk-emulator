@@ -46,8 +46,8 @@ public final class ImageUtil {
      * @param transparency one of {@link java.awt.Transparency#OPAQUE}, {@link java.awt.Transparency#BITMASK}, or
      *   {@link java.awt.Transparency#TRANSLUCENT}
      * @return a new image of the desired size
-     * @exception java.lang.OutOfMemoryError if there is no memory left to create the image
-     * @exception java.lang.IllegalArgumentException if the value of transparency is invalid
+     * @throws java.lang.OutOfMemoryError if there is no memory left to create the image
+     * @throws java.lang.IllegalArgumentException if the value of transparency is invalid
      */
     public static java.awt.image.BufferedImage createCompatibleImage(int width, int height, int transparency) {
         // TODO transparency

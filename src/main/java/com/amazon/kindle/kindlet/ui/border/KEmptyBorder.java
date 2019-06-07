@@ -38,8 +38,7 @@ public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractB
 
     /**
      * Creates an empty border with the requested insets.
-     *
-     * @param borderInsets - the border's insets
+     * @param borderInsets the border's insets
      */
     public KEmptyBorder(java.awt.Insets borderInsets) {
     // TODO codavaj!!
@@ -47,9 +46,10 @@ public class KEmptyBorder extends com.amazon.kindle.kindlet.ui.border.KAbstractB
 
     /**
      * Creates an empty border with the requested insets.
-     *
-     * @param top - the top insetleft - the left insetbottom - the bottom
-     *            insetright - the right inset
+     * @param top the top inset
+     * @param left the left inset
+     * @param bottom the bottom inset
+     * @param right the right inset
      */
     public KEmptyBorder(int top, int left, int bottom, int right) {
     // TODO codavaj!!

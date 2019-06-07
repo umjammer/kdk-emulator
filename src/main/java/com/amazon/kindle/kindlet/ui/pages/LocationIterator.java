@@ -55,7 +55,7 @@ public interface LocationIterator extends java.util.Iterator {
      * must
      * return false.
      * @return the next element in the iteration
-     * @exception java.util.NoSuchElementException if no more elements exist in the iteration
+     * @throws java.util.NoSuchElementException if no more elements exist in the iteration
      */
     abstract java.lang.Object next() throws java.util.NoSuchElementException;
 
@@ -72,7 +72,7 @@ public interface LocationIterator extends java.util.Iterator {
      * iteration location is unknown this method return
      * {@link java.lang.Integer#MIN_VALUE}
      * .
-     * @return the location of the next element, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MAX_VALUE">Integer.MAX_VALUE</A> / <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A>
+     * @return the location of the next element, or {@link java.lang.Integer#MAX_VALUE} / {@link java.lang.Integer#MIN_VALUE}
      */
     abstract int nextLocation();
 
@@ -89,7 +89,7 @@ public interface LocationIterator extends java.util.Iterator {
      * iteration location is unknown this method return
      * {@link java.lang.Integer#MIN_VALUE}
      * .
-     * @return the location of the previous element, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MAX_VALUE">Integer.MAX_VALUE</A> / <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MIN_VALUE">Integer.MIN_VALUE</A>
+     * @return the location of the previous element, or {@link java.lang.Integer#MAX_VALUE} / {@link java.lang.Integer#MIN_VALUE}
      */
     abstract int previousLocation();
 
@@ -100,7 +100,7 @@ public interface LocationIterator extends java.util.Iterator {
      * throw
      * {@link java.lang.UnsupportedOperationException}
      * .
-     * @exception java.lang.UnsupportedOperationException always
+     * @throws java.lang.UnsupportedOperationException always
      */
     abstract void remove() throws java.lang.UnsupportedOperationException;
 }

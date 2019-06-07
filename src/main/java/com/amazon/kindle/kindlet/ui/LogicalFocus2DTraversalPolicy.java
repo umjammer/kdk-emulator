@@ -21,8 +21,9 @@ package com.amazon.kindle.kindlet.ui;
 public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.AbstractFocus2DTraversalPolicy {
 
     /**
-     * Create a new traversal policy that has no effect until is called with a
-     * logical grid of components to traverse.
+     * Create a new traversal policy that has no effect until
+     * {@link com.amazon.kindle.kindlet.ui.LogicalFocus2DTraversalPolicy#setLogicalTraversalGrid(java.awt.Component[][])}
+     * is called with a logical grid of components to traverse.
      */
     public LogicalFocus2DTraversalPolicy() {
     // TODO codavaj!!
@@ -31,10 +32,9 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
     /**
      * Create a 2D traversal policy that navigates through a logical grid of
      * components.
-     *
-     * @param traversalGrid - Logical grid of Components that this policy
-     *            navigates through. See setLogicalTraversalGrid(Component[][])
-     *            for full documentation on this argument.
+     * @param traversalGrid Logical grid of Components that this policy navigates
+     *                           through. See {@link com.amazon.kindle.kindlet.ui.LogicalFocus2DTraversalPolicy#setLogicalTraversalGrid(java.awt.Component[][])}
+     *                           for full documentation on this argument.
      */
     public LogicalFocus2DTraversalPolicy(java.awt.Component[][] traversalGrid) {
     // TODO codavaj!!
@@ -144,7 +144,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      *                           or in the constructor's traversalGrid
      *                           argument which should be used as the value returned
      *                           from {@link com.amazon.kindle.kindlet.ui.LogicalFocus2DTraversalPolicy#getDefaultComponent(java.awt.Container)}.
-     * @exception java.lang.IllegalArgumentException Thrown if defaultComponent
+     * @throws java.lang.IllegalArgumentException Thrown if defaultComponent
      *          could not be found in the current traversal grid.
      * @see {@link com.amazon.kindle.kindlet.ui.LogicalFocus2DTraversalPolicy#getDefaultComponent(java.awt.Container)}
      */
@@ -160,7 +160,7 @@ public class LogicalFocus2DTraversalPolicy extends com.amazon.kindle.kindlet.ui.
      *             the default component.
      * @param y The y index of the traversal array for the component to set as
      *             the default component.
-     * @exception java.lang.IllegalArgumentException Thrown if the x or y values were out of
+     * @throws java.lang.IllegalArgumentException Thrown if the x or y values were out of
      *          range or if they referred to a null entry in the navigation grid.
      * @see {@link com.amazon.kindle.kindlet.ui.LogicalFocus2DTraversalPolicy#getDefaultComponent(java.awt.Container)}
      */

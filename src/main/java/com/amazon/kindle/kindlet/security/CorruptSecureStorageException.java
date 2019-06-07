@@ -19,8 +19,7 @@ public class CorruptSecureStorageException extends java.lang.RuntimeException {
 
     /**
      * Constructs a new exception with the specified detail message.
-     *
-     * @param msg - the detail message.
+     * @param msg the detail message.
      */
     public CorruptSecureStorageException(java.lang.String msg) {
         super(msg);
@@ -28,12 +27,14 @@ public class CorruptSecureStorageException extends java.lang.RuntimeException {
 
     /**
      * Constructs a new exception with the specified detail message and cause.
-     * Note that the detail message associated with cause is not automatically
-     * incorporated in this exception's detail message.
      *
+     * Note that the detail message associated with cause is
+     * <I>not</I>
+     * automatically
+     * incorporated in this exception's detail message.
      * @param msg the detail message
-     * @param ex the cause. (A null value is permitted, and indicates that the
-     *            cause is nonexistent or unknown.)
+     * @param ex the cause. (A null value is
+     *             permitted, and indicates that the cause is nonexistent or unknown.)
      */
     public CorruptSecureStorageException(java.lang.String msg, java.lang.Throwable ex) {
         super(msg, ex);

@@ -18,8 +18,8 @@ package com.amazon.kindle.kindlet.ui;
 public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
 
     /**
-     * Constructs a multi-line label with empty text, a LEADING horizontal
-     * alignment, and a TOP vertical alignment.
+     * Constructs a multi-line label with empty text, a LEADING
+     * horizontal alignment, and a TOP vertical alignment.
      */
     public KLabelMultiline() {
     // TODO codavaj!!
@@ -28,8 +28,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Constructs a multi-line label with the supplied text, a LEADING
      * horizontal alignment, and a TOP vertical alignment.
-     *
-     * @param text - text to display
+     * @param text text to display
      */
     public KLabelMultiline(java.lang.String text) {
     // TODO codavaj!!
@@ -38,21 +37,19 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Constructs a multi-line label with text, the specified horizontal
      * alignment, and a TOP vertical alignment.
-     *
-     * @param text - text to displayhorizontalAlignment - horizontal alignment
-     *            of the label within its bounds.
+     * @param text text to display
+     * @param horizontalAlignment horizontal alignment of the label within its bounds.
      */
     public KLabelMultiline(java.lang.String text, int horizontalAlignment) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a multi-line label with text and the specified horizontal and
-     * vertical alignments.
-     *
-     * @param text - text to displayhorizontalAlignment - horizontal alignment
-     *            of the label within its bounds.verticalAlignment - vertical
-     *            alignment of the label within its bounds.
+     * Constructs a multi-line label with text and the specified horizontal
+     * and vertical alignments.
+     * @param text text to display
+     * @param horizontalAlignment horizontal alignment of the label within its bounds.
+     * @param verticalAlignment vertical alignment of the label within its bounds.
      */
     public KLabelMultiline(java.lang.String text, int horizontalAlignment, int verticalAlignment) {
     // TODO codavaj!!
@@ -65,7 +62,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
      *                   if rows is not valid.
      * @return the value of rows as a convenience. This value is not
      *          justified or modified in any way.
-     * @exception java.lang.IllegalArgumentException thrown if rows is not a legal
+     * @throws java.lang.IllegalArgumentException thrown if rows is not a legal
      *          value
      */
     protected int checkRows(int rows, java.lang.String message) {
@@ -76,7 +73,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
     /**
      * Returns the number of rows set for this multi-line label.
      * @return The number of rows (i.e. lines) set for this label or
-     *          <A href="../../../../../com/amazon/kindle/kindlet/ui/KTextComponent.html#SHOW_ALL_LINES">KTextComponent.SHOW_ALL_LINES</A> if the number of rows is
+     *          {@link com.amazon.kindle.kindlet.ui.KTextComponent#SHOW_ALL_LINES} if the number of rows is
      *          unbounded (the default).
      */
     public int getRows() {
@@ -89,7 +86,7 @@ public class KLabelMultiline extends com.amazon.kindle.kindlet.ui.KLabel {
      * laying out multi-line text.
      * @param rows The number of rows to limit this label to or {@link com.amazon.kindle.kindlet.ui.KTextComponent#SHOW_ALL_LINES}
      *               to leave the maximum number of lines unbounded.
-     * @exception java.lang.IllegalArgumentException if rows &amp;lte; 0 (and not equal to SHOW_ALL_LINES).
+     * @throws java.lang.IllegalArgumentException if rows &amp;lte; 0 (and not equal to SHOW_ALL_LINES).
      */
     public void setRows(int rows) {
         // TODO codavaj!!

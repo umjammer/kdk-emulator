@@ -65,9 +65,8 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
 
     /**
      * Create a new container that pages over the supplied model.
-     *
-     * @param pageModel - the model that contains the items for the
-     *            pagespageProvider - instance responsible for build a page
+     * @param pageModel the model that contains the items for the pages
+     * @param pageProvider instance responsible for build a page
      */
     public KPagedContainer(com.amazon.kindle.kindlet.ui.pages.PageModel pageModel, com.amazon.kindle.kindlet.ui.pages.PageProvider pageProvider) {
     // TODO codavaj!!
@@ -132,7 +131,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
     /**
      * Obtains a read-only set of the keystrokes that are handled
      * by turning to the next page.
-     * @return a read-only set of <A href="http://java.sun.com/javame/reference/apis/jsr217/java/awt/AWTKeyStroke.html">AWTKeyStroke</A>
+     * @return a read-only set of {@link java.awt.AWTKeyStroke}
      * @see {@link com.amazon.kindle.kindlet.ui.KPagedContainer#setPageKeyPolicy(int)},
      * {@link com.amazon.kindle.kindlet.ui.KPagedContainer#setNextPageKeyStrokes(java.util.Set)}
      */
@@ -143,7 +142,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
 
     /**
      * Returns the end location of the current page, if known.
-     * @return the end location of the currnt page, or <A href="http://java.sun.com/javame/reference/apis/jsr217/java/lang/Integer.html#MAX_VALUE">Integer.MAX_VALUE</A>
+     * @return the end location of the currnt page, or {@link java.lang.Integer#MAX_VALUE}
      */
     public int getPageEndLocation() {
         // TODO codavaj!!
@@ -195,7 +194,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
     /**
      * Obtains a read-only set of the keystrokes that are handled
      * by turning to the previous page.
-     * @return a read-only set of <A href="http://java.sun.com/javame/reference/apis/jsr217/java/awt/AWTKeyStroke.html">AWTKeyStroke</A>
+     * @return a read-only set of {@link java.awt.AWTKeyStroke}
      * @see {@link com.amazon.kindle.kindlet.ui.KPagedContainer#setPageKeyPolicy(int)},
      * {@link com.amazon.kindle.kindlet.ui.KPagedContainer#setPreviousPageKeyStrokes(java.util.Set)}
      */
@@ -371,7 +370,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
      * If there is overlap between the previous and next page keystrokes, one
      * will win - but the winner is undefined.
      * @param keyStrokes a Set of {@link java.awt.AWTKeyStroke}s
-     * @exception java.lang.IllegalArgumentException if Set contains invalid objects
+     * @throws java.lang.IllegalArgumentException if Set contains invalid objects
      */
     public void setNextPageKeyStrokes(java.util.Set keyStrokes) {
         // TODO codavaj!!
@@ -411,7 +410,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
      * method also refreshes the current page, but does not repaint the
      * component.
      * @param provider the new page provider
-     * @exception java.lang.IllegalArgumentException if the provider is null
+     * @throws java.lang.IllegalArgumentException if the provider is null
      */
     public void setPageProvider(com.amazon.kindle.kindlet.ui.pages.PageProvider provider) {
         // TODO codavaj!!
@@ -437,7 +436,7 @@ public class KPagedContainer extends com.amazon.kindle.kindlet.ui.KPanel {
      * If there is overlap between the previous and next page keystrokes, one
      * will win - but the winner is undefined.
      * @param keyStrokes a Set of {@link java.awt.AWTKeyStroke}s
-     * @exception java.lang.IllegalArgumentException if Set contains invalid objects
+     * @throws java.lang.IllegalArgumentException if Set contains invalid objects
      */
     public void setPreviousPageKeyStrokes(java.util.Set keyStrokes) {
         // TODO codavaj!!

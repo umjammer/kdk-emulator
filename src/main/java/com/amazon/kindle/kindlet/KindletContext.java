@@ -22,7 +22,7 @@ public interface KindletContext {
      * use the Connectivity API to request that the device connect to the
      * network.
      * @return a reference which can be used to inquire about network connectivity
-     * @exception java.lang.SecurityException if the Kindlet is not approved for network access
+     * @throws java.lang.SecurityException if the Kindlet is not approved for network access
      */
     abstract com.amazon.kindle.kindlet.net.Connectivity getConnectivity();
 

@@ -20,10 +20,8 @@ public class ConnectivityStateException extends java.io.IOException {
     }
 
     /**
-     * Constructs a new ConnectivityStateException with the given detail
-     * message.
-     *
-     * @param msg - the exception message
+     * Constructs a new ConnectivityStateException with the given detail message.
+     * @param msg the exception message
      */
     public ConnectivityStateException(java.lang.String msg) {
         super(msg);

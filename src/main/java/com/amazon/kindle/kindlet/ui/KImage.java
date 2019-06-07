@@ -78,24 +78,22 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     public static final int STRETCH_TO_FIT = -3;
 
     /**
-     * Creates a component that displays the image at its natural size, centered
-     * in the component.
-     *
-     * @param image - the image to display, may be null
+     * Creates a component that displays the image at its natural size, centered in the
+     * component.
+     * @param image the image to display, may be null
      */
     public KImage(java.awt.Image image) {
     // TODO codavaj!!
     }
 
     /**
-     * Creates a component that displays the desired image, at the specified
-     * size, in the center of the component.
-     *
-     * @param image - the image to display, may be nullwidth - the desired
-     *            width, or one of the scaling constantsheight - the desired
-     *            height, or one of the scaling constants Throws:
-     *            IllegalArgumentException - if an invalid argument was
-     *            suppliedSee Also:setDesiredSize(int, int)
+     * Creates a component that displays the desired image, at the specified size,  in
+     * the center of the component.
+     * @param image the image to display, may be null
+     * @param width the desired width, or one of the scaling constants
+     * @param height the desired height, or one of the scaling constants
+     * @throws java.lang.IllegalArgumentException if an invalid argument was supplied
+     * @see {@link com.amazon.kindle.kindlet.ui.KImage#setDesiredSize(int, int)}
      */
     public KImage(java.awt.Image image, int width, int height) {
     // TODO codavaj!!
@@ -103,27 +101,25 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
 
     /**
      * Creates a component which displays the supplied image.
-     *
-     * @param image - the image to display, may be nullwidth - the desired width
-     *            in pixels, or one of the scaling constantsheight - the desired
-     *            height in pixels, or one of the scaling
-     *            constantshorizontalAlignment - the alignment along the
-     *            horizontal axisverticalAlignment - the alignment along the
-     *            vertical axis Throws: IllegalArgumentException - if an invalid
-     *            argument was suppliedSee Also:setDesiredSize(int, int)
+     * @param image the image to display, may be null
+     * @param width the desired width in pixels, or one of the scaling constants
+     * @param height the desired height in pixels, or one of the scaling constants
+     * @param horizontalAlignment the alignment along the horizontal axis
+     * @param verticalAlignment the alignment along the vertical axis
+     * @throws java.lang.IllegalArgumentException if an invalid argument was supplied
+     * @see {@link com.amazon.kindle.kindlet.ui.KImage#setDesiredSize(int, int)}
      */
     public KImage(java.awt.Image image, int width, int height, com.amazon.kindle.kindlet.ui.KImage.Alignment horizontalAlignment, com.amazon.kindle.kindlet.ui.KImage.Alignment verticalAlignment) {
     // TODO codavaj!!
     }
 
     /**
-     * Creates a component that displays the image at natural size, aligned in
-     * the indicated manner in the component.
-     *
-     * @param image - the image to display, may be nullhorizontalAlignment - the
-     *            alignment along the horizontal axisverticalAlignment - the
-     *            alignment along the vertical axis Throws:
-     *            IllegalArgumentException - if an invalid argument was supplied
+     * Creates a component that displays the image at natural size, aligned in the indicated
+     * manner in the component.
+     * @param image the image to display, may be null
+     * @param horizontalAlignment the alignment along the horizontal axis
+     * @param verticalAlignment the alignment along the vertical axis
+     * @throws java.lang.IllegalArgumentException if an invalid argument was supplied
      */
     public KImage(java.awt.Image image, com.amazon.kindle.kindlet.ui.KImage.Alignment horizontalAlignment, com.amazon.kindle.kindlet.ui.KImage.Alignment verticalAlignment) {
     // TODO codavaj!!
@@ -253,7 +249,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * Sets the horizontal alignment of the image within the component, if the component is wider than the image.
      * @param horizontalAlignment the desired horizontal alignment
-     * @exception java.lang.IllegalArgumentException if the supplied alignment is not valid
+     * @throws java.lang.IllegalArgumentException if the supplied alignment is not valid
      */
     public void setHorizontalAlignment(com.amazon.kindle.kindlet.ui.KImage.Alignment horizontalAlignment) {
         // TODO codavaj!!
@@ -273,7 +269,7 @@ public class KImage extends com.amazon.kindle.kindlet.ui.KComponent implements j
     /**
      * Sets the vertical alignment of the image within the component, if the component is taller than the image.
      * @param verticalAlignment the desired vertical alignment
-     * @exception java.lang.IllegalArgumentException if the supplied alignment is not valid
+     * @throws java.lang.IllegalArgumentException if the supplied alignment is not valid
      */
     public void setVerticalAlignment(com.amazon.kindle.kindlet.ui.KImage.Alignment verticalAlignment) {
         // TODO codavaj!!

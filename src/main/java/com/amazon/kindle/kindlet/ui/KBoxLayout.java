@@ -75,14 +75,13 @@ public class KBoxLayout implements java.awt.LayoutManager2 {
     public static final int Y_AXIS = 1;
 
     /**
-     * Creates a new box-style layout for the supplied container along the
-     * specified axis. This layout is specific to the container and can not be
-     * shared.
-     *
-     * @param container - the container to layoutaxis - the axis to lay out
-     *            components along. This must be one of X_AXIS, Y_AXIS,
-     *            LINE_AXIS or PAGE_AXIS. Throws: AWTError - if an invalid value
-     *            is supplied
+     * Creates a new box-style layout for the supplied container along
+     * the specified axis.  This layout is specific to the container
+     * and can not be shared.
+     * @param container the container to layout
+     * @param axis the axis to lay out components along.  This must be one of
+     *  {@link com.amazon.kindle.kindlet.ui.KBoxLayout#X_AXIS}, {@link com.amazon.kindle.kindlet.ui.KBoxLayout#Y_AXIS}, {@link com.amazon.kindle.kindlet.ui.KBoxLayout#LINE_AXIS} or {@link com.amazon.kindle.kindlet.ui.KBoxLayout#PAGE_AXIS}.
+     * @throws java.awt.AWTError if an invalid value is supplied
      */
     public KBoxLayout(java.awt.Container container, int axis) {
     // TODO codavaj!!

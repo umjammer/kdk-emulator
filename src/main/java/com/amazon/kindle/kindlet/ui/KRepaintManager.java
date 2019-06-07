@@ -32,7 +32,7 @@ public abstract class KRepaintManager {
      * @param y y coordinate of the upper left of the rectangle to be updated
      * @param w the width of the rectangle to be updated
      * @param h the height of the rectangle to be updated
-     * @exception java.lang.IllegalStateException if this is called outside of the event loop thread.
+     * @throws java.lang.IllegalStateException if this is called outside of the event loop thread.
      */
     public abstract void addDirtyRegion(java.awt.Component component, int x, int y, int w, int h) throws java.lang.IllegalStateException;
 
@@ -55,7 +55,7 @@ public abstract class KRepaintManager {
      * the event loop thread else throws
      * {@link java.lang.IllegalStateException}
      * .
-     * @exception java.lang.IllegalStateException if this is called outside of the event loop thread.
+     * @throws java.lang.IllegalStateException if this is called outside of the event loop thread.
      */
     public void paintDirtyRegions() throws java.lang.IllegalStateException {
         // TODO codavaj!!
@@ -74,7 +74,7 @@ public abstract class KRepaintManager {
      * {@link java.lang.IllegalStateException}
      * .
      * @param fullRefresh requests that the dirty regions be fully refreshed to minimize ghosting.
-     * @exception java.lang.IllegalStateException if this is called outside of the event loop thread.
+     * @throws java.lang.IllegalStateException if this is called outside of the event loop thread.
      */
     public abstract void paintDirtyRegions(boolean fullRefresh) throws java.lang.IllegalStateException;
 
@@ -87,8 +87,8 @@ public abstract class KRepaintManager {
      * the queue and blocks the calling thread until that repaint has executed.
      * @param component the component to paint
      * @param fullRefresh if true flash to minimize ghosting
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting (the paint may still happen)
-     * @exception java.lang.reflect.InvocationTargetException if an exception was thrown during the attempt to paint
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting (the paint may still happen)
+     * @throws java.lang.reflect.InvocationTargetException if an exception was thrown during the attempt to paint
      */
     public static void paintImmediately(java.awt.Component component, boolean fullRefresh) throws java.lang.InterruptedException, java.lang.reflect.InvocationTargetException {
         // TODO codavaj!!
@@ -105,8 +105,8 @@ public abstract class KRepaintManager {
      * @param component the component to paint
      * @param region the region of the component to paint
      * @param fullRefresh if true flash to minimize ghosting
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting (the paint may still happen)
-     * @exception java.lang.reflect.InvocationTargetException if an exception was thrown during the attempt to paint
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting (the paint may still happen)
+     * @throws java.lang.reflect.InvocationTargetException if an exception was thrown during the attempt to paint
      */
     public static void paintImmediately(java.awt.Component component, java.awt.Rectangle region, boolean fullRefresh) throws java.lang.InterruptedException, java.lang.reflect.InvocationTargetException {
         // TODO codavaj!!

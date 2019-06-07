@@ -79,7 +79,7 @@ public class KMenu {
      * Gets the menu item at the specified index.
      * @param index the position of the item (0-based).
      * @return the menu item located at the index.
-     * @exception java.lang.IllegalArgumentException if the index is outside the
+     * @throws java.lang.IllegalArgumentException if the index is outside the
      *  permissible bounds
      * @see {@link com.amazon.kindle.kindlet.ui.KMenu#add(com.amazon.kindle.kindlet.ui.KMenuItem)},
      * {@link com.amazon.kindle.kindlet.ui.KMenu#getItemCount()}
@@ -112,7 +112,7 @@ public class KMenu {
      * are shifted up, as necessary.
      * @param item the item to insert.
      * @param index the position to insert.
-     * @exception java.lang.IllegalArgumentException if the index is outside of the valid range
+     * @throws java.lang.IllegalArgumentException if the index is outside of the valid range
      * @see {@link com.amazon.kindle.kindlet.ui.KMenu#add(java.lang.String)},
      * {@link com.amazon.kindle.kindlet.ui.KMenu#add(com.amazon.kindle.kindlet.ui.KMenuItem)}
      */
@@ -128,7 +128,7 @@ public class KMenu {
      * at the supplied index.
      * @param label the label for the new item
      * @param index the position to insert.
-     * @exception java.lang.IllegalArgumentException if the index is outside of the valid range
+     * @throws java.lang.IllegalArgumentException if the index is outside of the valid range
      * @see {@link com.amazon.kindle.kindlet.ui.KMenu#add(java.lang.String)},
      * {@link com.amazon.kindle.kindlet.ui.KMenu#add(com.amazon.kindle.kindlet.ui.KMenuItem)},
      * {@link com.amazon.kindle.kindlet.ui.KMenu#insert(com.amazon.kindle.kindlet.ui.KMenuItem, int)}
@@ -142,7 +142,7 @@ public class KMenu {
      * Inserts a separator into the current menu at the supplied position.  A separator helps
      * visually separate menu items from one another.
      * @param index where to insert the separator
-     * @exception java.lang.IllegalArgumentException if the index is outside of the valid range.
+     * @throws java.lang.IllegalArgumentException if the index is outside of the valid range.
      * @see {@link com.amazon.kindle.kindlet.ui.KMenu#addSeparator()}
      */
     public void insertSeparator(int index) {

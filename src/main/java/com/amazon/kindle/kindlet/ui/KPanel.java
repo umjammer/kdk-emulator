@@ -15,7 +15,9 @@ package com.amazon.kindle.kindlet.ui;
 public class KPanel extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
-     * Creates a new KPanel with a .
+     * Creates a new KPanel with a
+     * {@link java.awt.FlowLayout}
+     * .
      */
     public KPanel() {
     // TODO codavaj!!
@@ -23,8 +25,7 @@ public class KPanel extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
      * Creates a new KPanel with the specified layout manager.
-     *
-     * @param layout - the default LayoutManager for this panel
+     * @param layout the default {@link java.awt.LayoutManager} for this panel
      */
     public KPanel(java.awt.LayoutManager layout) {
     // TODO codavaj!!

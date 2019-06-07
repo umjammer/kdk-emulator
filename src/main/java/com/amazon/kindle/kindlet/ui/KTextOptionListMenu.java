@@ -13,7 +13,6 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Construct an empty menu with the given title
-     *
      * @param title menu title
      */
     public KTextOptionListMenu(java.lang.String title) {
@@ -22,13 +21,10 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
 
     /**
      * Construct an empty menu with the given title
-     *
      * @param title menu title
-     * @param elements array of items to add to the menu. If an item is a
-     *            KTextOptionMenuItem it is added, otherwise the item is added
-     *            by wrapping with a KTextOptionMenuItem
-     * @throws IllegalArgumentException if items array is null or an element of
-     *             items is null
+     * @param elements array of items to add to the menu.  If an item is a KTextOptionMenuItem it
+     *  is added, otherwise the item is added by wrapping with a KTextOptionMenuItem
+     * @throws java.lang.IllegalArgumentException if items array is null or an element of items is null
      */
     public KTextOptionListMenu(java.lang.String title, java.lang.Object[] elements) {
     // TODO codavaj!!
@@ -38,8 +34,8 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * Adds a KTextOptionMenuItem to the end of the option menu.
      * @param index index of item to add
      * @param item menu item to add
-     * @exception java.lang.IllegalArgumentException if item is null
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
+     * @throws java.lang.IllegalArgumentException if item is null
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
      */
     public void add(int index, com.amazon.kindle.kindlet.ui.KTextOptionMenuItem item) {
         // TODO codavaj!!
@@ -49,7 +45,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
     /**
      * Adds a KTextOptionMenuItem to the end of the option menu.
      * @param item menu item to add
-     * @exception java.lang.IllegalArgumentException if item is null
+     * @throws java.lang.IllegalArgumentException if item is null
      */
     public void add(com.amazon.kindle.kindlet.ui.KTextOptionMenuItem item) {
         // TODO codavaj!!
@@ -95,7 +91,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * Removes a menu item at the specified index.
      * @param index index of menu to remove
      * @return menu item removed
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt; size()).
      */
     public com.amazon.kindle.kindlet.ui.KTextOptionMenuItem remove(int index) {
         // TODO codavaj!!
@@ -115,7 +111,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
     /**
      * Sets the KTextOptionMenuItem as the selected selected value
      * @param item selected menu item
-     * @exception java.lang.IllegalArgumentException if item is null or item is not on the menu
+     * @throws java.lang.IllegalArgumentException if item is null or item is not on the menu
      */
     public void setSelected(com.amazon.kindle.kindlet.ui.KTextOptionMenuItem item) {
         // TODO codavaj!!
@@ -126,7 +122,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
      * Return the selected menu item index.
      * Sets the KTextOptionMenuItem as the selected selected value
      * @param index index of the selected menu item
-     * @exception java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt;= size()).
+     * @throws java.lang.IndexOutOfBoundsException if index is out of range (index &lt; 0 || index &gt;= size()).
      */
     public void setSelectedIndex(int index) {
         // TODO codavaj!!
@@ -136,7 +132,7 @@ public class KTextOptionListMenu extends com.amazon.kindle.kindlet.ui.KTextOptio
     /**
      * Sets the menu title
      * @param title menu title
-     * @exception java.lang.IllegalArgumentException if title is null
+     * @throws java.lang.IllegalArgumentException if title is null
      */
     public void setTitle(java.lang.String title) {
         // TODO codavaj!!

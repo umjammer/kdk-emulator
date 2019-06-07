@@ -63,10 +63,10 @@ public class KOptionPane {
      * @param message the message to display to the user
      * @return the button selected when the user closed the dialog (based on
      *          optionType)
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showConfirmDialog(java.awt.Component, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -87,7 +87,7 @@ public class KOptionPane {
      * @param parent a showing component which is the parent for this dialog
      * @param message the message to display to the user
      * @param listener the listener to notify when a selection is made
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showConfirmDialog(java.awt.Component parent, java.lang.String message, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener listener) {
         // TODO codavaj!!
@@ -112,10 +112,10 @@ public class KOptionPane {
      * @param title the title to use for the message box
      * @return the button selected when the user closed the dialog (based on
      *          optionType)
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showConfirmDialog(java.awt.Component, java.lang.String, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -139,10 +139,10 @@ public class KOptionPane {
      * @param optionType an option type constant
      * @return the button selected when the user closed the dialog (based on
      *          optionType)
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showConfirmDialog(java.awt.Component, java.lang.String, java.lang.String, int, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -165,10 +165,10 @@ public class KOptionPane {
      * @param messageType a message type constant
      * @return the button selected when the user closed the dialog (based on
      *          optionType)
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showConfirmDialog(java.awt.Component, java.lang.String, java.lang.String, int, int, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -204,7 +204,7 @@ public class KOptionPane {
      * @param title the title to use for the message box
      * @param optionType an option type constant
      * @param listener the listener to notify when a selection is made
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showConfirmDialog(java.awt.Component parent, java.lang.String message, java.lang.String title, int optionType, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener listener) {
         // TODO codavaj!!
@@ -223,7 +223,7 @@ public class KOptionPane {
      * @param message the message to display to the user
      * @param title the title to use for the message box
      * @param listener the listener to notify when a selection is made
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showConfirmDialog(java.awt.Component parent, java.lang.String message, java.lang.String title, com.amazon.kindle.kindlet.ui.KOptionPane.ConfirmDialogListener listener) {
         // TODO codavaj!!
@@ -243,10 +243,10 @@ public class KOptionPane {
      * @param initialValue the initial value for the input dialog
      * @return the value entered by the user or null if the user canceled the
      *          input
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the input
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the input
      *              dialog to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showInputDialog(java.awt.Component, java.lang.String, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.InputDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -264,7 +264,7 @@ public class KOptionPane {
      * @param title the title to use for the input dialog
      * @param initialValue the value to pre-fill in the text field
      * @param listener the listener to notify when the box closes
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showInputDialog(java.awt.Component parent, java.lang.String title, java.lang.String initialValue, com.amazon.kindle.kindlet.ui.KOptionPane.InputDialogListener listener) {
         // TODO codavaj!!
@@ -283,10 +283,10 @@ public class KOptionPane {
      * ("Message").
      * @param parent a showing component which is the parent for this dialog
      * @param message the message to display to the user
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showMessageDialog(java.awt.Component, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -303,8 +303,8 @@ public class KOptionPane {
      * @param parent a showing component which is the parent for this dialog
      * @param message the message to display to the user
      * @param listener the listener to notify when the message box is closed
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showMessageDialog(java.awt.Component parent, java.lang.String message, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener listener) {
         // TODO codavaj!!
@@ -323,10 +323,10 @@ public class KOptionPane {
      * @param parent a showing component which is the parent for this dialog
      * @param message the message to display to the user
      * @param title the title to use for the message box
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showMessageDialog(java.awt.Component, java.lang.String, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -345,10 +345,10 @@ public class KOptionPane {
      * @param message the message to display to the user
      * @param title the title to use for the message box
      * @param messageType a message type constant
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.InterruptedException if the thread was interrupted while waiting for the message
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.InterruptedException if the thread was interrupted while waiting for the message
      *              box to close
-     * @exception java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
+     * @throws java.lang.IllegalStateException Thrown if called from within the AWT dispatch thread. Use
      *              {@link com.amazon.kindle.kindlet.ui.KOptionPane#showMessageDialog(java.awt.Component, java.lang.String, java.lang.String, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener)}
      *              to avoid this exception.  Also thrown if another dialog is already visible
      */
@@ -368,8 +368,8 @@ public class KOptionPane {
      * @param title the title to use for the message box
      * @param messageType a message type constant
      * @param listener the listener to notify when the message box is closed
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showMessageDialog(java.awt.Component parent, java.lang.String message, java.lang.String title, int messageType, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener listener) {
         // TODO codavaj!!
@@ -385,8 +385,8 @@ public class KOptionPane {
      * @param message the message to display to the user
      * @param title the title to use for the message box
      * @param listener the listener to notify when the message box is closed
-     * @exception java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
-     * @exception java.lang.IllegalStateException if another dialog is already visible
+     * @throws java.lang.IllegalArgumentException if the parent is not a showing child of a Kindlet
+     * @throws java.lang.IllegalStateException if another dialog is already visible
      */
     public static void showMessageDialog(java.awt.Component parent, java.lang.String message, java.lang.String title, com.amazon.kindle.kindlet.ui.KOptionPane.MessageDialogListener listener) {
         // TODO codavaj!!

@@ -12,73 +12,61 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
 
     /**
      * Constructs a new empty text Area. that is platform-dependent.
-     *
-     * @see TextArea
+     * @see {@link java.awt.TextArea}
      */
     public KTextArea() {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new empty TextArea with the specified number of rows and
-     * columns with the initial string is null.
-     *
-     * @param rows - the number of rows >= 0columns - the number of columns >= 0
-     *            Throws: IllegalArgumentException - if the rows or columns
-     *            arguments are negative.
+     * Constructs a new empty TextArea with the specified number of rows and columns with the initial string is null.
+     * @param rows the number of rows &gt;= 0
+     * @param columns the number of columns &gt;= 0
+     * @throws java.lang.IllegalArgumentException if the rows or columns arguments are negative.
      */
     public KTextArea(int rows, int columns) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text area initialized with the specified text to be
-     * displayed.
-     *
-     * @param text - the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.See Also:TextArea
+     * Constructs a new text area initialized with the specified text to be displayed.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @see {@link java.awt.TextArea}
      */
     public KTextArea(java.lang.String text) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text area initialized with the specified text to be
-     * displayed.
-     *
-     * @param text - the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.rows - the number of rows >= 0columns -
-     *            the number of columns >= 0 Throws: IllegalArgumentException -
-     *            if the rows or columns arguments are negative.See
-     *            Also:TextArea
+     * Constructs a new text area initialized with the specified text to be displayed.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param rows the number of rows &gt;= 0
+     * @param columns the number of columns &gt;= 0
+     * @throws java.lang.IllegalArgumentException if the rows or columns arguments are negative.
+     * @see {@link java.awt.TextArea}
      */
     public KTextArea(java.lang.String text, int rows, int columns) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text area initialized with the specified text to be
-     * displayed.
-     *
-     * @param text - the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.hint - the text to be displayed when the
-     *            component is empty. If text is null, the empty string "" will
-     *            be displayed.See Also:TextArea
+     * Constructs a new text area initialized with the specified text to be displayed.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param hint the text to be displayed when the component is empty. If text is null, the empty string "" will be displayed.
+     * @see {@link java.awt.TextArea}
      */
     public KTextArea(java.lang.String text, java.lang.String hint) {
     // TODO codavaj!!
     }
 
     /**
-     * Constructs a new text area initialized with the specified text to be
-     * displayed.
-     *
-     * @param text - the text to be displayed. If text is null, the empty string
-     *            "" will be displayed.hint - the text to be displayed when the
-     *            component is empty. If text is null, the empty string "" will
-     *            be displayed.rows - the number of rows >= 0columns - the
-     *            number of columns >= 0 Throws: IllegalArgumentException - if
-     *            the rows or columns arguments are negative.See Also:TextArea
+     * Constructs a new text area initialized with the specified text to be displayed.
+     * @param text the text to be displayed. If text is null, the empty string "" will be displayed.
+     * @param hint the text to be displayed when the component is empty. If text is null, the empty string "" will be displayed.
+     * @param rows the number of rows &gt;= 0
+     * @param columns the number of columns &gt;= 0
+     * @throws java.lang.IllegalArgumentException if the rows or columns arguments are negative.
+     * @see {@link java.awt.TextArea}
      */
     public KTextArea(java.lang.String text, java.lang.String hint, int rows, int columns) {
     // TODO codavaj!!
@@ -276,7 +264,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Sets the number of columns in this text area.
      * @param columns the number of columns.
-     * @exception java.lang.IllegalArgumentException if the value supplied for columns is less than 0.
+     * @throws java.lang.IllegalArgumentException if the value supplied for columns is less than 0.
      * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#getColumns()},
      * {@link java.awt.TextArea#getColumns}
      */
@@ -340,7 +328,7 @@ public class KTextArea extends com.amazon.kindle.kindlet.ui.KTextComponent {
     /**
      * Sets the number of rows for this text area.
      * @param rows the number of rows
-     * @exception java.lang.IllegalArgumentException if the value supplied for rows is less than 0
+     * @throws java.lang.IllegalArgumentException if the value supplied for rows is less than 0
      * @see {@link com.amazon.kindle.kindlet.ui.KTextArea#getRows()},
      * {@link java.awt.TextArea#getRows}
      */

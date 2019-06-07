@@ -35,8 +35,7 @@ public class KButton extends com.amazon.kindle.kindlet.ui.KComponent {
 
     /**
      * Constructs a new button with the given label.
-     *
-     * @param label - label to appear on the button, or null for no label
+     * @param label label to appear on the button, or null for no label
      */
     public KButton(java.lang.String label) {
     // TODO codavaj!!

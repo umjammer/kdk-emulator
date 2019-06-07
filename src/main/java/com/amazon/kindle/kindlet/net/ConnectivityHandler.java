@@ -16,7 +16,7 @@ public interface ConnectivityHandler {
      * before this method is actually executed. This will commonly show up as
      * an IOException during the network connection. Applications should
      * respond to errors by issuing a new connectivity request if this happens.
-     * @exception java.lang.InterruptedException Implementors of this interface must not
+     * @throws java.lang.InterruptedException Implementors of this interface must not
      *          "absorb" InterruptedExceptions thrown from within this
      *          method. Doing so may cause an application to exit abnormally under
      *          some circumstances.
@@ -46,7 +46,7 @@ public interface ConnectivityHandler {
      * {@link com.amazon.kindle.kindlet.net.NetworkDisabledReason}
      * for more information.
      * @param details details on why network access is disabled
-     * @exception java.lang.InterruptedException Implementors of this interface must not
+     * @throws java.lang.InterruptedException Implementors of this interface must not
      *          "absorb" InterruptedExceptions thrown from within this
      *          method. Doing so may cause an application to exit abnormally under
      *          some circumstances.

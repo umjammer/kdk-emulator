@@ -64,7 +64,7 @@ public abstract class AbstractFocus2DTraversalPolicy extends com.amazon.kindle.k
      *                       the current focus cycle root when performing an implicit
      *                       up-cycle. Duplicate calls with this reference are
      *                       discarded quietly.
-     * @exception java.lang.IllegalArgumentException if the exclusion argument is
+     * @throws java.lang.IllegalArgumentException if the exclusion argument is
      *          null.
      */
     public final void addImplicitUpCycleExclusion(java.awt.Container exclusion) {
