@@ -62,26 +62,56 @@ public interface SecureStorage {
     abstract void clear();
 
     /**
-     * Retrieve data previously stored under a specific key. If the given key
-     * was not saved using putBytes(String, byte[]), then the output of this
+     * Retrieve data previously stored under a specific key.
+     *
+     * If the given key was not saved using
+     * {@link com.amazon.kindle.kindlet.security.SecureStorage#putBytes(java.lang.String, byte[])}
+     * , then the output of this
      * method does not guarantee the expected result.
+     * @param key the key to retrieve data for
+     * @return the bytes stored for the key in the secure store.  Can
+     *          be null if the key is null or not found in the secure store.
+     * @see {@link com.amazon.kindle.kindlet.security.SecureStorage#putBytes(java.lang.String, byte[])}
      */
     abstract byte[] getBytes(java.lang.String key);
 
     /**
-     * Retrieve data previously stored under a specific key. If the given key
-     * was not saved using putChars(String, char[]), then the output of this
+     * Retrieve data previously stored under a specific key.
+     *
+     * If the given key was not saved using
+     * {@link com.amazon.kindle.kindlet.security.SecureStorage#putChars(java.lang.String, char[])}
+     * , then the output of this
      * method does not guarantee the expected result.
+     * @param key the key to retrieve data for
+     * @return the characters stored for the key in the secure store.  Can
+     *          be null if the key is null or not found in the secure store.
+     * @see {@link com.amazon.kindle.kindlet.security.SecureStorage#putChars(java.lang.String, char[])}
      */
     abstract char[] getChars(java.lang.String key);
 
     /**
      * Create or update a binary entry in the secure store.
+     * @param key key for the data
+     * @param data non-null array of bytes to be stored for the key
+     * @return success
+     *               true if the given data was saved successfully to the secure store; false otherwise, or if text key or data is null
+     * @throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException an unexpected error occurred persisting the store and it was not possible to roll-back to the previous state.
+     *              Clients are should call {@link com.amazon.kindle.kindlet.security.SecureStorage#clear()}, if they want to re-initialize the store.
+     * @see {@link com.amazon.kindle.kindlet.security.SecureStorage#getBytes(java.lang.String)},
+     * {@link com.amazon.kindle.kindlet.security.SecureStorage#putChars(java.lang.String, char[])}
      */
     abstract boolean putBytes(java.lang.String key, byte[] data) throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException;
 
     /**
      * Create or update a text entry in the secure store.
+     * @param key key for the data
+     * @param data non-null array of characters to be stored for the key
+     * @return success
+     *               true if the given data was saved successfully to the secure store; false otherwise, or if text key or data is null
+     * @throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException an unexpected error occurred persisting the store and it was not possible to roll-back to the previous state.
+     *              Clients are should call {@link com.amazon.kindle.kindlet.security.SecureStorage#clear()}, if they want to re-initialize the store.
+     * @see {@link com.amazon.kindle.kindlet.security.SecureStorage#getChars(java.lang.String)},
+     * {@link com.amazon.kindle.kindlet.security.SecureStorage#putBytes(java.lang.String, byte[])}
      */
     abstract boolean putChars(java.lang.String key, char[] data) throws com.amazon.kindle.kindlet.security.CorruptSecureStorageException;
 

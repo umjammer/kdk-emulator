@@ -48,7 +48,7 @@ public class Timer {
 
     /**
      * Terminates the timer.  All scheduled tasks are discarded.  Tasks already executing are allowed to complete.
-     * @see {@link java.util.Timer$html#cancel()}
+     * @see {@link java.util.Timer#cancel()}
      */
     public void cancel() {
         timer.cancel();
@@ -137,7 +137,7 @@ public class Timer {
      * @throws java.lang.IllegalArgumentException if period or delay is negative or adding delay to System.currentTimeMillis causes overflow
      * @throws java.lang.IllegalStateException if the timer has been canceled or the task is already scheduled
      * @throws java.lang.NullPointerException if task is null (same behavior as java.util.Timer)
-     * @see {@link java.util.Timer$html#scheduleAtFixedRate(TimerTask, long, long)}
+     * @see {@link java.util.Timer#scheduleAtFixedRate(TimerTask, long, long)}
      */
     public void scheduleAtFixedRate(com.amazon.kindle.kindlet.util.TimerTask task, long delay, long period) {
         // TODO codavaj!!

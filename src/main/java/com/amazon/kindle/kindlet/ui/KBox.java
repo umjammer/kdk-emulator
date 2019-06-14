@@ -123,10 +123,10 @@ public class KBox extends com.amazon.kindle.kindlet.ui.KComponent {
      *
      * The JavaDoc for javax.swing.Box was unclear on if this is invisible space or not.
      * This component draws its background if
-     * {@link com.amazon.kindle.kindlet.ui.KBox$Filler#isOpaque()}
+     * {@link com.amazon.kindle.kindlet.ui.KBox.Filler#isOpaque()}
      * is true.  The opacity can
      * be changed via
-     * {@link com.amazon.kindle.kindlet.ui.KBox$Filler#setOpaque(boolean)}
+     * {@link com.amazon.kindle.kindlet.ui.KBox.Filler#setOpaque(boolean)}
      * .
      */
     public static class Filler extends com.amazon.kindle.kindlet.ui.KComponent {

@@ -76,9 +76,9 @@ public class KPasswordField extends com.amazon.kindle.kindlet.ui.KTextField {
     }
 
     /**
-     * Returns the text contained in this TextField. For stronger security, it
-     * is recommended that the returned character array be cleared after use by
-     * setting each character to zero.
+     * Returns the text contained in this TextField. For stronger security, it is recommended that the returned
+     * character array be cleared after use by setting each character to zero.
+     * @return the password text.
      */
     public char[] getPassword() {
         // TODO codavaj!!

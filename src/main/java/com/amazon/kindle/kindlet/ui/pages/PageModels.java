@@ -5,7 +5,7 @@ package com.amazon.kindle.kindlet.ui.pages;
 
 /**
  * Provides helper methods to create
- * {@link com.amazon.kindle.kindlet.ui.pages.PageModels$ListPageModel}
+ * {@link com.amazon.kindle.kindlet.ui.pages.PageModels.ListPageModel}
  * instances for common collections.
  */
 public final class PageModels {

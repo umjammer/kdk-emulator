@@ -71,7 +71,7 @@ public abstract class KindletUIResources {
      * @param inFontFamily The font family to get the default font face for.
      * @param inStyle The style to prefer for the font. If the style is not
      *                       available a different style may be returned. For example;
-     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KFontStyle#BOLD_ITALIC} is requested but only
+     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KFontStyle#BOLD_ITALIC} is requested but only
      *                       and italic face is available then the italic face is
      *                       returned. If an italic face is also not available, in
      *                       this scenario, then a plan face will be returned.
@@ -89,7 +89,7 @@ public abstract class KindletUIResources {
      * @param inFontFamily The font family to get the default font face for.
      * @param inStyle The style to prefer for the font. If the style is not
      *                       available a different style may be returned. For example;
-     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KFontStyle#BOLD_ITALIC} is requested but only
+     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KFontStyle#BOLD_ITALIC} is requested but only
      *                       and italic face is available then the italic face is
      *                       returned. If an italic face is also not available, in
      *                       this scenario, then a plan face will be returned.
@@ -154,7 +154,7 @@ public abstract class KindletUIResources {
      *                       exact value specified.
      * @param inStyle The style to prefer for the font. If the style is not
      *                       available a different style may be returned. For example;
-     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KFontStyle#BOLD_ITALIC} is requested but only
+     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KFontStyle#BOLD_ITALIC} is requested but only
      *                       and italic face is available then the italic face is
      *                       returned. If an italic face is also not available, in
      *                       this scenario, then a plan face will be returned.
@@ -170,7 +170,7 @@ public abstract class KindletUIResources {
      *                       exact value specified.
      * @param inStyle The style to prefer for the font. If the style is not
      *                       available a different style may be returned. For example;
-     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KFontStyle#BOLD_ITALIC} is requested but only
+     *                       if {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KFontStyle#BOLD_ITALIC} is requested but only
      *                       and italic face is available then the italic face is
      *                       returned. If an italic face is also not available, in
      *                       this scenario, then a plan face will be returned.
@@ -450,10 +450,10 @@ public abstract class KindletUIResources {
          * Returns this color value's plain name. Plain names are case insensitive
          * English equivalents for a given KColorName value. Note that
          * this class's
-         * {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KColorName#toString()}
+         * {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KColorName#toString()}
          * method does not return
          * the color name's plain value. The
-         * {@link com.amazon.kindle.kindlet.ui.KindletUIResources$KColorName#equivalent(java.lang.Object)}
+         * {@link com.amazon.kindle.kindlet.ui.KindletUIResources.KColorName#equivalent(java.lang.Object)}
          * method
          * will successfully compare plain names with their respective KColorName
          * values however. Developers are encouraged to use the plain name when
