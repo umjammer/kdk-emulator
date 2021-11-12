@@ -2,7 +2,7 @@
 
 I can not wait for the release of [KDK](http://amazon.com/kdk/) ;-P
 
-# News
+# Buzz
 
 * [Official (jp)](http://www.klab.com/jp/press/detail/id=4825)
 * [GIZMODE](http://gizmodo.com/5518727/the-kindle-plays-nes-games-like-a-penguin-soars)
